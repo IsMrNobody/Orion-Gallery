@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark class="bg">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -24,22 +24,22 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
+    <v-app-bar :clipped-left="clipped" fixed app color="black">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn @click.stop="miniVariant = !miniVariant" icon>
+      <!-- <v-btn @click.stop="miniVariant = !miniVariant" icon>
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn @click.stop="clipped = !clipped" icon>
+      </v-btn> -->
+      <!-- <v-btn @click.stop="clipped = !clipped" icon>
         <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn @click.stop="fixed = !fixed" icon>
+      </v-btn> -->
+      <!-- <v-btn @click.stop="fixed = !fixed" icon>
         <v-icon>mdi-minus</v-icon>
-      </v-btn>
+      </v-btn> -->
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn @click.stop="rightDrawer = !rightDrawer" icon>
+      <!-- <v-btn @click.stop="rightDrawer = !rightDrawer" icon>
         <v-icon>mdi-menu</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
     <v-content>
       <v-container>
@@ -86,8 +86,14 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Orion'
     }
   }
 }
 </script>
+
+<style scoped>
+.bg {
+  background-color: black;
+}
+</style>
