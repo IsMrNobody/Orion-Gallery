@@ -5,6 +5,7 @@
       :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
+      class="nav"
       app
     >
       <v-list>
@@ -26,9 +27,9 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app color="black">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <!-- <v-btn @click.stop="miniVariant = !miniVariant" icon>
+      <v-btn @click.stop="miniVariant = !miniVariant" icon>
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn> -->
+      </v-btn>
       <!-- <v-btn @click.stop="clipped = !clipped" icon>
         <v-icon>mdi-application</v-icon>
       </v-btn> -->
@@ -58,14 +59,19 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
+    <v-footer :fixed="fixed" color="black" app>
       <span>&copy; 2019</span>
     </v-footer>
+    <Footer />
   </v-app>
 </template>
 
 <script>
+import Footer from '@/layouts/Footer.vue'
 export default {
+  components: {
+    Footer
+  },
   data() {
     return {
       clipped: false,
@@ -74,19 +80,19 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Inicio',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Gallery',
+          to: '/gallery'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Orion'
+      title: 'Orion Gallery'
     }
   }
 }
@@ -94,6 +100,9 @@ export default {
 
 <style scoped>
 .bg {
-  background-color: black;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(27, 2, 22));
+}
+.nav {
+  background-image: linear-gradient(rgb(16, 3, 27), rgb(0, 0, 0));
 }
 </style>
