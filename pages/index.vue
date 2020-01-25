@@ -31,7 +31,7 @@
           Galleria de arte y diseño
         </p>
         <p class="font">
-          Galleria de arte y diseño Lorem ipsum dolor sit amet consectetur
+          Galeria de arte y diseño Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Sed excepturi officiis dolorem error est doloribus
           officia labore? Commodi quasi nostrum, sequi ipsa iure labore voluptas
           debitis deleniti maiores sed voluptatum!

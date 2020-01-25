@@ -15,16 +15,14 @@ export default {
     return {
       items: [
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+          src:
+            'http://www.graciaviva.cat/png/big/18/180282_star-background-images.jpg'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+          src: 'http://getwallpapers.com/wallpaper/full/0/3/9/254241.jpg'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-        },
-        {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          src: 'https://wallpapersite.com/images/pages/pic_w/15333.jpg'
         }
       ]
     }
