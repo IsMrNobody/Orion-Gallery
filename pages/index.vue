@@ -17,12 +17,17 @@
             style="font-family: 'Tangerine'"
             class="text-center hidden-sm-and-up"
           >
-            <h1>Orion Gallery</h1>
-            <h2>Desde las constelaciones</h2>
+            <!-- para asignarle la tipografia a los elementos, utilizo la clase tangerine 
+               que esta declarada a nivel de este componente en la parte de style
+               si quieres ponerlo a nivel global de la aplicacion ,tienes que crear la clase 
+               en el componente layouts/default.vue... revisa tambien nuxt.config.js para
+               que veas la sintaxis que tienes que usar para agregar las tipografias-->
+            <h1 class="tangerine">Orion Gallery</h1>
+            <h2 class="tangerine">Desde las constelaciones</h2>
           </div>
           <div class="titulos text-left hidden-xs-only">
-            <h1>Orion Gallery</h1>
-            <h2>Desde las constelaciones</h2>
+            <h1 class="tangerine">Orion Gallery</h1>
+            <h2 class="tangerine">Desde las constelaciones</h2>
           </div>
         </v-flex>
       </v-img>
@@ -93,6 +98,9 @@ export default {
 </script>
 
 <style scoped>
+.tangerine {
+  font-family: 'Tangerine', cursive;
+}
 .titulos {
   font-size: 2rem;
   padding-top: 140px;
