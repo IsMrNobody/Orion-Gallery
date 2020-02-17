@@ -16,7 +16,7 @@ export default {
       items: [
         {
           src:
-            'http://www.graciaviva.cat/png/big/18/180282_star-background-images.jpg'
+            'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/bg-web.jpg?alt=media&token=dc8b7769-e8f6-4f65-9bb1-18261ec1d7ba'
         },
         {
           src: 'http://getwallpapers.com/wallpaper/full/0/3/9/254241.jpg'

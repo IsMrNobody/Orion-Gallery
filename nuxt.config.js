@@ -21,7 +21,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Tangerine&display=swap'
+        href:
+          'https://fonts.googleapis.com/css?family=Aladin|Alegreya+SC|Cinzel+Decorative&display=swap'
       }
     ]
   },
@@ -53,6 +54,16 @@ export default {
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
    */
+  env: {
+    apiKey: 'AIzaSyDtoLjJRD2wu94gpK_KQB31v6OIdGkSYMg',
+    authDomain: 'orion-gallery-116f8.firebaseapp.com',
+    databaseURL: 'https://orion-gallery-116f8.firebaseio.com',
+    projectId: 'orion-gallery-116f8',
+    storageBucket: 'orion-gallery-116f8.appspot.com',
+    messagingSenderId: '872124384806',
+    appId: '1:872124384806:web:ba65b1a95eda03b4bcc8e7',
+    measurementId: 'G-YGDEH1GBTQ'
+  },
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {

@@ -1,5 +1,5 @@
 <template>
-  <v-layout column justify-center align-center>
+  <v-row justify="center">
     <div class="img">
       <v-img
         width="100vw"
@@ -7,35 +7,36 @@
         ma-5
         src="https://cdn.mos.cms.futurecdn.net/reaVPYbHtVWG8WHFPrgdvB.jpg"
       >
-        <vLayout justify-center align-center justify-space-around mt-5>
-          <vToolbarTitle> Gallery </vToolbarTitle>
-          <vToolbarIcon> <img src="v.png" alt="" /> </vToolbarIcon>
-          <vToolbarTitle> Contact </vToolbarTitle>
-        </vLayout>
-        <v-flex pa-5 pl-5 ma-5>
-          <div
-            style="font-family: 'Tangerine'"
-            class="text-center hidden-sm-and-up"
-          >
+        <v-row justify="center" class="aladin mt-5">
+          <v-toolbarTitle>
+            <v-btn text color="">Gallery</v-btn>
+          </v-toolbarTitle>
+          <v-toolbarIcon> <img src="v.png" alt="" /> </v-toolbarIcon>
+          <v-toolbarTitle>
+            <v-btn text color="" to="contacto">Contacto</v-btn>
+          </v-toolbarTitle>
+        </v-row>
+        <v-col pa-5 pl-5 ma-5>
+          <div class="text-center hidden-sm-and-up cinzel">
             <!-- para asignarle la tipografia a los elementos, utilizo la clase tangerine 
                que esta declarada a nivel de este componente en la parte de style
                si quieres ponerlo a nivel global de la aplicacion ,tienes que crear la clase 
                en el componente layouts/default.vue... revisa tambien nuxt.config.js para
                que veas la sintaxis que tienes que usar para agregar las tipografias-->
-            <h1 class="tangerine">Orion Gallery</h1>
-            <h2 class="tangerine">Desde las constelaciones</h2>
+            <h1>Orion Gallery</h1>
+            <h2>Desde las constelaciones</h2>
           </div>
-          <div class="titulos text-left hidden-xs-only">
-            <h1 class="tangerine">Orion Gallery</h1>
-            <h2 class="tangerine">Desde las constelaciones</h2>
+          <div class="titulos text-left hidden-xs-only cinzel">
+            <h1>Orion Gallery</h1>
+            <h2>Desde las constelaciones</h2>
           </div>
-        </v-flex>
+        </v-col>
       </v-img>
-      <div class="text-center pt-5">
+      <div class="text-center pt-5 ma-5 pl-5">
         <p>
           Galleria de arte y diseño
         </p>
-        <p class="font">
+        <p class="alegreya pad">
           Galeria de arte y diseño Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Sed excepturi officiis dolorem error est doloribus
           officia labore? Commodi quasi nostrum, sequi ipsa iure labore voluptas
@@ -47,14 +48,12 @@
         <Contain class="tarjetas" />
       </div>
     </div>
-    <v-layout row justify-center>
-      <v-flex v-for="(cartel, i) in carteles" :key="i" ma-5 md3>
-        <v-img :src="`${cartel.src}`" width="400px" class="memory">
-          <Paral2 />
-        </v-img>
-      </v-flex>
-    </v-layout>
-    <p class="text-center">
+    <v-col v-for="(cartel, i) in carteles" :key="i" ma-5 md3>
+      <v-img :src="`${cartel.src}`" max-width="400px" class="memory">
+        <Paral2 />
+      </v-img>
+    </v-col>
+    <p class="text-center alegreya pad">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam autem,
       repellendus maxime ea iure necessitatibus voluptatibus cum harum ab
       repellat sapiente dolore amet unde corrupti suscipit voluptatem eius
@@ -63,7 +62,7 @@
     <div class="carousel">
       <Carousel />
     </div>
-  </v-layout>
+  </v-row>
 </template>
 
 <script>
@@ -98,8 +97,14 @@ export default {
 </script>
 
 <style scoped>
-.tangerine {
-  font-family: 'Tangerine', cursive;
+.aladin {
+  font-family: 'Aladin', cursive;
+}
+.alegreya {
+  font-family: 'Alegreya SC', serif;
+}
+.cinzel {
+  font-family: 'Cinzel Decorative', cursive;
 }
 .titulos {
   font-size: 2rem;
@@ -129,5 +134,9 @@ export default {
 }
 .img {
   width: 100vw;
+}
+.pad {
+  margin: 4%;
+  font-size: 40px;
 }
 </style>

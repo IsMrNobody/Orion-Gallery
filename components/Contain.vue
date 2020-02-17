@@ -1,41 +1,43 @@
 <template>
-  <v-layout row justify-center class="color">
-    <v-flex v-for="(galeria, i) in galerias" :key="i" xs12 sm6 md3 ma-5>
-      <a :href="`${galeria.link}`" target="_blank" class="decoration">
+  <v-container>
+    <v-row>
+      <v-col v-for="(galeria, i) in galerias" :key="i">
         <v-card class="mx-auto tarjeta elevation-10" max-width="350px">
-          <v-img
-            :src="`${galeria.src}`"
-            :alt="galeria.titulo"
-            class="white--text align-end"
-            height="300px"
-            width="100%"
-          >
-            <v-card-title>{{ galeria.titulo }}</v-card-title>
-          </v-img>
+          <a :href="`${galeria.link}`" target="_blank" class="decoration">
+            <v-img
+              :src="`${galeria.src}`"
+              :alt="galeria.titulo"
+              class="white--text align-end"
+              height="300px"
+              width="100%"
+            >
+              <v-card-title>{{ galeria.titulo }}</v-card-title>
+            </v-img>
 
-          <v-card-subtitle class="text-left pb-0">{{
-            galeria.subtitulo
-          }}</v-card-subtitle>
+            <v-card-subtitle class="text-left pb-0">{{
+              galeria.subtitulo
+            }}</v-card-subtitle>
 
-          <v-card-text class="text--primary text-left">
-            <div>Whitehaven Beach</div>
+            <v-card-text class="text--primary text-left">
+              <div>Whitehaven Beach</div>
 
-            <div>Whitsunday Island, Whitsunday Islands</div>
-          </v-card-text>
+              <div>Whitsunday Island, Whitsunday Islands</div>
+            </v-card-text>
 
-          <v-card-actions>
-            <v-btn nuxt="gallery" color="orange" text>
-              Ver
-            </v-btn>
+            <v-card-actions>
+              <v-btn nuxt="gallery" color="orange" text>
+                Ver
+              </v-btn>
 
-            <!-- <v-btn color="orange" text>
-              Explore
-            </v-btn> -->
-          </v-card-actions>
+              <!-- <v-btn color="orange" text>
+                  Explore
+                </v-btn> -->
+            </v-card-actions>
+          </a>
         </v-card>
-      </a>
-    </v-flex>
-  </v-layout>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -46,7 +48,8 @@ export default {
       {
         titulo: 'Instagram',
         subtitulo: 'info',
-        src: 'icon.png',
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/BannerC_3.png?alt=media&token=bb127bc2-f610-49ea-a404-8465755f5a43',
         link: 'gallery'
       },
       {
