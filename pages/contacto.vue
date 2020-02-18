@@ -13,13 +13,17 @@
 <script>
 export default {
   data: () => ({
-    clave: '',
-    correo: ''
+    clave: '', // ok como ahora tienes estas variables aqui y estas capturando lo
+    correo: '' // campos de texto, entonces ahora los llamamos dentro del metodo
   }),
   methods: {
     registrar() {
-      this.$store.dispatch('auth/signUp', this.clave)
-    }
+      const payload = { // tenemos que armar este objeto con los contenidos de clave y correo
+        password: this.clave, // para pasarselo al metodo registrar
+        email: this.correo // fino panal ahora si entiendo un poco mas el asunto
+      }
+      this.$store.dispatch('auth/signUp', payload) // pilla estamos enviando este objeto
+    } // ok nos vamos al ootro archivo de la tienda... ya por aqui terminamos
   }
 }
 </script>
