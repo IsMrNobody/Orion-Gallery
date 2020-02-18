@@ -25,7 +25,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn nuxt="gallery" color="orange" text>
+              <v-btn to="gallery" color="orange" text>
                 Ver
               </v-btn>
 
