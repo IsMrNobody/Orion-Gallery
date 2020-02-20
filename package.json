@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
+    "firebase": "^7.8.2",
+    "js-cookie": "^2.2.1",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

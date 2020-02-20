@@ -18,7 +18,8 @@ export default {
   }),
   methods: {
     registrar() {
-      const payload = { // tenemos que armar este objeto con los contenidos de clave y correo
+      const payload = {
+        // tenemos que armar este objeto con los contenidos de clave y correo
         password: this.clave, // para pasarselo al metodo registrar
         email: this.correo // fino panal ahora si entiendo un poco mas el asunto
       }

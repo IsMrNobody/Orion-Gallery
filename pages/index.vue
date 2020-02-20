@@ -1,17 +1,14 @@
 <template>
   <v-row justify="center">
     <div class="img">
-      <v-img
-        width="100vw"
-        height="100vh"
-        ma-5
-        src="https://cdn.mos.cms.futurecdn.net/reaVPYbHtVWG8WHFPrgdvB.jpg"
-      >
+      <v-img width="100vw" height="100vh" ma-5 src="bginicio.png">
         <v-row justify="center" class="aladin mt-5">
           <v-toolbarTitle>
             <v-btn text color="">Gallery</v-btn>
           </v-toolbarTitle>
-          <v-toolbarIcon> <img src="v.png" alt="" /> </v-toolbarIcon>
+          <v-toolbarIcon>
+            <img width="400px" src="logorion.png" alt="" />
+          </v-toolbarIcon>
           <v-toolbarTitle>
             <v-btn text color="" to="contacto">Contacto</v-btn>
           </v-toolbarTitle>
@@ -25,25 +22,32 @@
                que veas la sintaxis que tienes que usar para agregar las tipografias-->
             <h1>Orion Gallery</h1>
             <h2>Desde las constelaciones</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              expedita hic dicta cum facilis ex asperiores sit dolorem neque
+              maiores rem adipisci sint tempora blanditiis, tenetur et similique
+              unde culpa.
+            </p>
           </div>
           <div class="titulos text-left hidden-xs-only cinzel">
-            <h1>Orion Gallery</h1>
-            <h2>Desde las constelaciones</h2>
+            <!-- <h1>Orion Gallery</h1> -->
+            <h2 ml-5>Bellatrix</h2>
+            <v-card width="600px" color="black" height="200px"></v-card>
           </div>
         </v-col>
       </v-img>
-      <div class="text-center pt-5 ma-5 pl-5">
+      <div class="pad text-center pa-5">
         <p>
           Galleria de arte y diseño
         </p>
-        <p class="alegreya pad">
+        <p>
           Galeria de arte y diseño Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Sed excepturi officiis dolorem error est doloribus
           officia labore? Commodi quasi nostrum, sequi ipsa iure labore voluptas
           debitis deleniti maiores sed voluptatum!
         </p>
-        <Paral />
       </div>
+      <Paral />
       <div>
         <Contain class="tarjetas" />
       </div>
@@ -98,13 +102,13 @@ export default {
 
 <style scoped>
 .aladin {
-  font-family: 'Aladin', cursive;
+  /* font-family: 'Aladin', cursive; */
 }
 .alegreya {
-  font-family: 'Alegreya SC', serif;
+  /* font-family: 'Alegreya SC', serif; */
 }
 .cinzel {
-  font-family: 'Cinzel Decorative', cursive;
+  /* font-family: 'Cinzel Decorative', cursive; */
 }
 .titulos {
   font-size: 2rem;
@@ -133,10 +137,10 @@ export default {
   padding-top: 200px;
 }
 .img {
-  width: 100vw;
+  /* width: 100vw; */
 }
 .pad {
-  margin: 4%;
-  font-size: 40px;
+  margin: 4% 4%;
+  font-size: 30px;
 }
 </style>

@@ -3,37 +3,39 @@
     <v-row>
       <v-col v-for="(galeria, i) in galerias" :key="i">
         <v-card class="mx-auto tarjeta elevation-10" max-width="350px">
-          <a :href="`${galeria.link}`" target="_blank" class="decoration">
-            <v-img
-              :src="`${galeria.src}`"
-              :alt="galeria.titulo"
-              class="white--text align-end"
-              height="300px"
-              width="100%"
-            >
-              <v-card-title>{{ galeria.titulo }}</v-card-title>
-            </v-img>
+          <!-- <a :href="`${galeria.link}`" target="_blank" class="decoration"> -->
+          <v-img
+            :src="`${galeria.src}`"
+            :alt="galeria.titulo"
+            class="white--text align-end"
+            height="300px"
+            width="100%"
+          >
+            <v-card-title>{{ galeria.titulo }}</v-card-title>
+          </v-img>
 
-            <v-card-subtitle class="text-left pb-0">{{
-              galeria.subtitulo
-            }}</v-card-subtitle>
+          <v-card-subtitle class="text-left pb-0">{{
+            galeria.subtitulo
+          }}</v-card-subtitle>
 
-            <v-card-text class="text--primary text-left">
-              <div>Whitehaven Beach</div>
+          <v-card-text class="text--primary text-left">
+            <div>Whitehaven Beach</div>
 
-              <div>Whitsunday Island, Whitsunday Islands</div>
-            </v-card-text>
+            <div>Whitsunday Island, Whitsunday Islands</div>
+          </v-card-text>
 
-            <v-card-actions>
-              <v-btn to="gallery" color="orange" text>
+          <v-card-actions>
+            <nuxt-link to="gallery">
+              <v-btn color="orange" text>
                 Ver
               </v-btn>
+            </nuxt-link>
 
-              <!-- <v-btn color="orange" text>
+            <!-- <v-btn color="orange" text>
                   Explore
                 </v-btn> -->
-            </v-card-actions>
-          </a>
+          </v-card-actions>
+          <!-- </a> -->
         </v-card>
       </v-col>
     </v-row>

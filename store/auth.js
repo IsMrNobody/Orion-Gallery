@@ -96,7 +96,7 @@ export const actions = {
         localStorage.setItem('idUser', res.user.uid)
         Cookie.set('idToken', res.user.ra)
         Cookie.set('idUser', res.user.uid)
-        this.$router.push('/panel')
+        this.$router.push('/gallery')
         alert(`Bienvenido a Orion Gallery`)
       })
       .catch((err) => {
