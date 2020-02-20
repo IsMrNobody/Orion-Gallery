@@ -1,55 +1,62 @@
 <template>
   <v-row justify="center">
-    <div class="img">
+    <div>
+      <div class="titulos text-left hidden-xs-only">
+        <h2 ml-5>Bellatrix</h2>
+        <p>Coleciones de objetos estelares</p>
+        <v-card
+          align="center"
+          justify="center"
+          width="350px"
+          color="black"
+          height="180px"
+        >
+          <v-icon>mdi-star-four-points</v-icon>
+        </v-card>
+      </div>
       <v-img
         width="100vw"
         height="100vh"
         ma-5
         src="https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/bginicio2.png?alt=media&token=654fafa2-8d27-47ec-af04-d2499668c088"
       >
-        <v-row justify="center" class="aladin mt-5">
-          <v-toolbarTitle>
-            <v-btn text color="">Gallery</v-btn>
-          </v-toolbarTitle>
+        <v-row justify="space-around" class="aladin mt-5 ma-5">
           <v-toolbarIcon>
-            <img width="400px" src="logorion.png" alt="" />
+            <img width="350px" src="logorion.png" alt="" />
           </v-toolbarIcon>
+          <v-toolbarTitle>
+            <v-btn text color="red">Gallery</v-btn>
+          </v-toolbarTitle>
+          <v-toolbarTitle>
+            <v-btn text color="" to="contacto">Orion</v-btn>
+          </v-toolbarTitle>
           <v-toolbarTitle>
             <v-btn text color="" to="contacto">Contacto</v-btn>
           </v-toolbarTitle>
         </v-row>
-        <v-col pa-5 pl-5 ma-5>
-          <div class="text-center hidden-sm-and-up cinzel">
-            <!-- para asignarle la tipografia a los elementos, utilizo la clase tangerine 
-               que esta declarada a nivel de este componente en la parte de style
-               si quieres ponerlo a nivel global de la aplicacion ,tienes que crear la clase 
-               en el componente layouts/default.vue... revisa tambien nuxt.config.js para
-               que veas la sintaxis que tienes que usar para agregar las tipografias-->
-            <h1>Orion Gallery</h1>
-            <h2>Desde las constelaciones</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              expedita hic dicta cum facilis ex asperiores sit dolorem neque
-              maiores rem adipisci sint tempora blanditiis, tenetur et similique
-              unde culpa.
-            </p>
-          </div>
-          <div class="titulos text-left hidden-xs-only cinzel">
-            <!-- <h1>Orion Gallery</h1> -->
-            <h2 ml-5>Bellatrix</h2>
-            <v-card width="600px" color="black" height="200px"></v-card>
-          </div>
-        </v-col>
       </v-img>
-      <div class="pad text-center pa-5">
-        <p>
-          Galleria de arte y diseño
-        </p>
-        <p>
-          Galeria de arte y diseño Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Sed excepturi officiis dolorem error est doloribus
-          officia labore? Commodi quasi nostrum, sequi ipsa iure labore voluptas
-          debitis deleniti maiores sed voluptatum!
+      <v-col pa-5 pl-5 ma-5>
+        <div class="text-center hidden-sm-and-up">
+          <h1>Orion Gallery</h1>
+          <h2>Desde las constelaciones</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita
+            hic dicta cum facilis ex asperiores sit dolorem neque maiores rem
+            adipisci sint tempora blanditiis, tenetur et similique unde culpa.
+          </p>
+        </div>
+      </v-col>
+      <div class="ma-5 text-center hidden-xs-only">
+        <div class="display-3">
+          <v-icon>mdi-star-four-points</v-icon>
+          <v-icon>mdi-star-four-points</v-icon>
+          <v-icon>mdi-star-four-points</v-icon>
+        </div>
+        <p class="pad text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui dolor
+          quos, dolores ipsum voluptatem impedit odit laboriosam accusamus
+          asperiores velit esse consequatur vitae, sunt inventore fugit
+          dignissimos hic dolorum.
         </p>
       </div>
       <Paral />
@@ -63,7 +70,7 @@
       </v-img>
     </v-col>
     <p class="text-center alegreya pad">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam autem,
+      Lorem2 ipsum dolor sit, amet consectetur adipisicing elit. Aliquam autem,
       repellendus maxime ea iure necessitatibus voluptatibus cum harum ab
       repellat sapiente dolore amet unde corrupti suscipit voluptatem eius
       recusandae voluptate.
@@ -106,19 +113,12 @@ export default {
 </script>
 
 <style scoped>
-.aladin {
-  /* font-family: 'Aladin', cursive; */
-}
-.alegreya {
-  /* font-family: 'Alegreya SC', serif; */
-}
-.cinzel {
-  /* font-family: 'Cinzel Decorative', cursive; */
-}
 .titulos {
+  z-index: 1;
+  position: absolute;
   font-size: 2rem;
-  padding-top: 140px;
-  padding-left: 150px;
+  padding-top: 42%;
+  padding-left: 6em;
 }
 .font {
   font-size: 1.5em;
@@ -129,9 +129,8 @@ export default {
   margin-bottom: 100px;
 }
 .carousel {
-  width: 100vw;
+  width: 100%;
   margin-top: 100px;
-  height: 400px;
 }
 .memory {
   background-image: radial-gradient(rgb(65, 15, 105), rgb(0, 0, 0));
@@ -140,9 +139,6 @@ export default {
 }
 .memory:hover {
   padding-top: 200px;
-}
-.img {
-  /* width: 100vw; */
 }
 .pad {
   margin: 4% 4%;

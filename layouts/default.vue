@@ -36,7 +36,7 @@
       <!-- <v-btn @click.stop="fixed = !fixed" icon>
         <v-icon>mdi-minus</v-icon>
       </v-btn> -->
-      <v-toolbar-title v-text="title" />
+      <!-- <v-toolbar-title v-text="title" /> -->
       <v-spacer />
       <!-- <v-btn @click.stop="rightDrawer = !rightDrawer" icon>
         <v-icon>mdi-menu</v-icon>
@@ -79,12 +79,12 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-star-four-points',
           title: 'Inicio',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-star-four-points',
           title: 'Gallery',
           to: '/gallery'
         }
