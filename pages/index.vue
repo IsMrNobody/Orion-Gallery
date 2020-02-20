@@ -1,7 +1,12 @@
 <template>
   <v-row justify="center">
     <div class="img">
-      <v-img width="100vw" height="100vh" ma-5 src="bginicio.png">
+      <v-img
+        width="100vw"
+        height="100vh"
+        ma-5
+        src="https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/bginicio2.png?alt=media&token=654fafa2-8d27-47ec-af04-d2499668c088"
+      >
         <v-row justify="center" class="aladin mt-5">
           <v-toolbarTitle>
             <v-btn text color="">Gallery</v-btn>
