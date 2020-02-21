@@ -17,10 +17,6 @@
           <v-img :src="`${vista.src}`" width="90px" class=""></v-img>
         </v-col>
       </v-img> -->
-
-      <v-btn @click="">
-
-      </v-btn>
     </div>
     <div>
       <v-col class="text-center">
