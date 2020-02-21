@@ -18,18 +18,19 @@
         </v-col>
       </v-img> -->
     </div>
-    <v-col class="text-center">
-      <img src="vid.png" alt="orion" class="mt-5" width="100px" />
-      <blockquote class="blockquote">
-        &#8220;Sin miedo a mirar más de lo que quieres ver&#8221;
-        <footer>
-          <small>
-            <em>&mdash;José Millan</em>
-          </small>
-        </footer>
-      </blockquote>
-    </v-col>
     <div>
+      <Group />
+      <v-col class="text-center">
+        <img src="favi.png" alt="orion" class="mt-5" width="100px" />
+        <blockquote class="blockquote">
+          &#8220;Sin miedo a mirar más de lo que quieres ver&#8221;
+          <footer>
+            <small>
+              <em>&mdash;José Millan</em>
+            </small>
+          </footer>
+        </blockquote>
+      </v-col>
       <Contain />
     </div>
   </v-row>
@@ -37,9 +38,11 @@
 
 <script>
 import Contain from '@/components/Contain.vue'
+import Group from '@/components/Group.vue'
 export default {
   components: {
-    Contain
+    Contain,
+    Group
   },
   data: () => ({
     vistas: [

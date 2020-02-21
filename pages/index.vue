@@ -33,8 +33,8 @@
               <img width="350px" src="logorion.png" alt="" />
             </v-toolbarIcon>
             <v-toolbarTitle class="mt-5">
-              <v-btn text color="">Gallery</v-btn>
-              <v-btn text color="" to="contacto">Orion</v-btn>
+              <v-btn text color="" to="/">inicio</v-btn>
+              <v-btn text color="" to="gallery">Gallery</v-btn>
               <v-btn text color="" to="contacto">Contacto</v-btn>
             </v-toolbarTitle>
           </v-row>
