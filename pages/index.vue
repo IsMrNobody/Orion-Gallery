@@ -5,34 +5,39 @@
         <h2 ml-5>Bellatrix</h2>
         <p>Coleciones de objetos estelares</p>
         <v-card
+          height="200px"
+          width="300px"
           align="center"
           justify="center"
-          width="350px"
           color="black"
-          height="180px"
         >
-          <v-icon>mdi-star-four-points</v-icon>
+          <v-img
+            width="100%"
+            height="200px"
+            src="https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/mib.gif?alt=media&token=213be64b-779c-420b-8dd3-51225b5cb4fd"
+          >
+            <v-icon>mdi-star-four-points</v-icon>
+          </v-img>
         </v-card>
       </div>
       <v-img
         width="100vw"
         height="100vh"
         ma-5
+        class="padi"
         src="https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/bginicio2.png?alt=media&token=654fafa2-8d27-47ec-af04-d2499668c088"
       >
-        <v-row justify="space-around" class="aladin mt-5 ma-5">
-          <v-toolbarIcon>
-            <img width="350px" src="logorion.png" alt="" />
-          </v-toolbarIcon>
-          <v-toolbarTitle>
-            <v-btn text color="red">Gallery</v-btn>
-          </v-toolbarTitle>
-          <v-toolbarTitle>
-            <v-btn text color="" to="contacto">Orion</v-btn>
-          </v-toolbarTitle>
-          <v-toolbarTitle>
-            <v-btn text color="" to="contacto">Contacto</v-btn>
-          </v-toolbarTitle>
+        <v-row justify="center" class="mt-5 pa-5">
+          <v-row justify="space-around" class="mt-5 ma-5">
+            <v-toolbarIcon>
+              <img width="350px" src="logorion.png" alt="" />
+            </v-toolbarIcon>
+            <v-toolbarTitle class="mt-5">
+              <v-btn text color="">Gallery</v-btn>
+              <v-btn text color="" to="contacto">Orion</v-btn>
+              <v-btn text color="" to="contacto">Contacto</v-btn>
+            </v-toolbarTitle>
+          </v-row>
         </v-row>
       </v-img>
       <v-col pa-5 pl-5 ma-5>
@@ -117,7 +122,7 @@ export default {
   z-index: 1;
   position: absolute;
   font-size: 2rem;
-  padding-top: 42%;
+  padding-top: 36%;
   padding-left: 6em;
 }
 .font {
@@ -143,5 +148,8 @@ export default {
 .pad {
   margin: 4% 4%;
   font-size: 30px;
+}
+.padi {
+  margin-top: -64px;
 }
 </style>

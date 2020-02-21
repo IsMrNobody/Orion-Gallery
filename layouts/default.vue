@@ -25,7 +25,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app color="black">
+    <v-app-bar :clipped-left="clipped" fixed flat app color="transparent">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn @click.stop="miniVariant = !miniVariant" icon>
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
@@ -60,7 +60,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer :fixed="fixed" color="black" app>
-      <span>&copy; 2019</span>
+      <span>&copy; 2020</span>
     </v-footer>
     <Footer />
   </v-app>
