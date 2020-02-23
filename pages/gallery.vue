@@ -1,5 +1,5 @@
 <template>
-  <v-row row justify-center align-center>
+  <v-row row justify="center" align-center>
     <div class="fotogal">
       <v-carousel hide-delimiters show-arrows-on-hover cycle>
         <v-carousel-item
@@ -9,16 +9,9 @@
           touch
         ></v-carousel-item>
       </v-carousel>
-      <!-- <v-img
-        width="100%"
-        src="https://cdn.mos.cms.futurecdn.net/reaVPYbHtVWG8WHFPrgdvB.jpg"
-      >
-        <v-col v-for="(vista, i) in vistas" :key="i" ma-5 xs1>
-          <v-img :src="`${vista.src}`" width="90px" class=""></v-img>
-        </v-col>
-      </v-img> -->
     </div>
     <div>
+      <Group />
       <v-col class="text-center">
         <img src="favi.png" alt="orion" class="mt-5" width="100px" />
         <blockquote class="blockquote">
@@ -35,20 +28,11 @@
 </template>
 
 <script>
+import Group from '@/components/Group.vue'
 export default {
-  data: () => ({
-    vistas: [
-      {
-        src: 'icon.png'
-      },
-      {
-        src: 'icon.png'
-      },
-      {
-        src: 'icon.png'
-      }
-    ]
-  }),
+  components: {
+    Group
+  },
   computed: {
     proyectoActual() {
       return this.$store.state.proyectos.proyectoActual
@@ -60,7 +44,6 @@ export default {
 <style scoped>
 .fotogal {
   width: 100%;
-  /* background-color: purple; */
 }
 .pos {
   position: absolute;

@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center">
     <div>
-      <div class="titulos text-left hidden-xs-only">
+      <!-- <div class="titulos text-left hidden-xs-only">
         <h2 ml-5>Bellatrix</h2>
         <p>Coleciones de objetos estelares</p>
         <v-card
@@ -19,7 +19,7 @@
             <v-icon>mdi-star-four-points</v-icon>
           </v-img>
         </v-card>
-      </div>
+      </div> -->
       <v-img
         width="100vw"
         height="100vh"
