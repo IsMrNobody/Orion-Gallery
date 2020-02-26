@@ -4,7 +4,7 @@
       <v-col v-for="(galeria, i) in galerias" :key="i">
         <v-card class="mx-auto tarjeta elevation-10" max-width="350px">
           <v-img
-            :src="`${galeria.src}`"
+            :src="galeria.src"
             :alt="galeria.titulo"
             class="white--text align-end"
             height="300px"
