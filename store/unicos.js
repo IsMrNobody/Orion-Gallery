@@ -13,7 +13,7 @@ export const state = () => ({
       titulo: 'Artropoart',
       subtitulo: 'Colección de artopodos',
       src:
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload.png?alt=media&token=76fc1cd1-c036-4a97-9af8-0d66f6fc69d0',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload_1.png?alt=media&token=07a8f743-e18c-409d-89f8-c8f54f7d1941',
       dialog: [
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fverti.png?alt=media&token=29dc4054-9a0f-45fb-8078-156695b14685'
       ]
@@ -22,7 +22,7 @@ export const state = () => ({
       titulo: 'Budas',
       subtitulo: 'Budas zen',
       src:
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload.png?alt=media&token=76fc1cd1-c036-4a97-9af8-0d66f6fc69d0',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload_1.png?alt=media&token=07a8f743-e18c-409d-89f8-c8f54f7d1941',
       gdialog: [
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F03%2Fverti.png?alt=media&token=5926605a-a768-4ab0-8d25-b1040115276d'
       ]

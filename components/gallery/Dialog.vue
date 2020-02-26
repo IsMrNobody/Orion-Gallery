@@ -25,10 +25,11 @@
       </v-col>
     </template>
 
-<!-- el "src" no funciona aqui abajo en "img" fuera del template de arriba -->
+<!-- El "src" no funciona aqui abajo en "img" -->
+
     <v-card flat class="black">
-      <!-- <v-img aspect-ratio="1" />
-      <v-card-title>
+      <v-img :src="unicos.src" aspect-ratio="1" />
+      <!-- <v-card-title>
         <span class="headline">title</span>
       </v-card-title>
       <v-card-text>
