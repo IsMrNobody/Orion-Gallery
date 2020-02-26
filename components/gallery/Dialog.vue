@@ -25,7 +25,7 @@
       </v-col>
     </template>
 
-<!-- El "src" no funciona aqui abajo en "img" -->
+    <!-- El "src" no funciona aqui abajo en "img" -->
 
     <v-card flat class="black">
       <v-img :src="unicos.src" aspect-ratio="1" />
