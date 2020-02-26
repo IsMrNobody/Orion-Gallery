@@ -1,34 +1,27 @@
 <template>
   <v-dialog v-model="dialog" max-width="380px">
+    <!-- lo que esta dentro de template es lo que se ve por fuera del dialogo -->
     <template v-slot:activator="{ on }">
-      <v-col v-for="(unico, i) in unicos" :key="i">
-        <v-row>
-          <v-card class="mx-auto tarjeta elevation-10" max-width="250px">
-            <v-img
-              :src="unico.src"
-              :alt="unico.titulo"
-              v-on="on"
-              class="white--text align-end"
-              height="300px"
-              width="100%"
-            >
-              <v-card-title>{{ unico.titulo }}</v-card-title>
-            </v-img>
-
-            <v-card-subtitle class="text-left pb-0">{{
-              unico.subtitulo
-            }}</v-card-subtitle>
-
-            <v-card-actions> </v-card-actions>
-          </v-card>
-        </v-row>
-      </v-col>
+      <v-card class="mx-auto tarjeta elevation-10" max-width="250px">
+        <v-img
+          :src="elemento.src"
+          :alt="elemento.titulo"
+          v-on="on"
+          class="white--text align-end"
+          height="300px"
+          width="100%"
+        ></v-img>
+        <v-card-title>{{ elemento.titulo }}</v-card-title>
+        <v-card-subtitle class="text-left pb-0">
+          {{ elemento.subtitulo }}
+        </v-card-subtitle>
+      </v-card>
     </template>
 
-    <!-- El "src" no funciona aqui abajo en "img" -->
-
+    <!-- y lo que esta fuera de template, esta dentro de el dialogo (suena loco no?) -->
+    <!-- de aqui para abajo todo estara dentro del dialogo -->
     <v-card flat class="black">
-      <v-img :src="unicos.src" aspect-ratio="1" />
+      <v-img :src="elemento.src" aspect-ratio="1" />
       <!-- <v-card-title>
         <span class="headline">title</span>
       </v-card-title>
@@ -47,14 +40,23 @@
 
 <script>
 export default {
+  // aqui recibes los datos que le pasaste a v-dialog en el otro archivo
+  props: {
+    elemento: {
+      // le especificas que es un objeto
+      type: Object,
+      // y que si no le pasas la informacion, se despliega con este relleno
+      default: () => ({
+        titulo: 'Orion Gallery',
+        subtitulo: 'Orion Gallery',
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload.png?alt=media&token=76fc1cd1-c036-4a97-9af8-0d66f6fc69d0'
+      })
+    }
+  },
   data: () => ({
     dialog: false
-  }),
-  computed: {
-    unicos() {
-      return this.$store.state.unicos.unidad
-    }
-  }
+  })
 }
 </script>
 

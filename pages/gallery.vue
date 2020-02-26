@@ -8,7 +8,10 @@
       <Frase />
     </v-row>
     <v-row>
-      <Dialog />
+      <!-- aqui haces el v-for fuera del elemento y metes el elemento Dialog dentro para poder pasarle los datos -->
+      <v-col v-for="(unico, i) in unicos" :key="i">
+        <Dialog :elemento="unico" />
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -24,6 +27,12 @@ export default {
     Slider,
     Dialog,
     Frase
+  },
+  // aqui traes unicos desde vuex
+  computed: {
+    unicos() {
+      return this.$store.state.unicos.unidad
+    }
   }
 }
 </script>
