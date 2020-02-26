@@ -23,22 +23,22 @@
 </template>
 
 <script>
+// import Flotante from '@/components/inicio/Flotante.vue'
 import Botones from '@/components/inicio/Botones.vue'
 import Contain from '@/components/inicio/Contain.vue'
 import Paral from '@/components/inicio/Paral.vue'
 import Cartas from '@/components/inicio/Cartas.vue'
 import Parrafo1 from '@/components/inicio/Parrafo1.vue'
 import Carousel from '@/components/inicio/Carousel.vue'
-// import Flotante from '@/components/inicio/Flotante.vue'
 export default {
   components: {
+    // Flotante,
     Botones,
     Contain,
     Paral,
     Cartas,
     Parrafo1,
     Carousel
-    // Flotante
   }
 }
 </script>
