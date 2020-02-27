@@ -18,7 +18,6 @@
     <v-col>
       <Cartas />
     </v-col>
-    <Carousel />
   </v-row>
 </template>
 
@@ -29,7 +28,6 @@ import Contain from '@/components/inicio/Contain.vue'
 import Paral from '@/components/inicio/Paral.vue'
 import Cartas from '@/components/inicio/Cartas.vue'
 import Parrafo1 from '@/components/inicio/Parrafo1.vue'
-import Carousel from '@/components/inicio/Carousel.vue'
 export default {
   components: {
     // Flotante,
@@ -37,8 +35,7 @@ export default {
     Contain,
     Paral,
     Cartas,
-    Parrafo1,
-    Carousel
+    Parrafo1
   }
 }
 </script>

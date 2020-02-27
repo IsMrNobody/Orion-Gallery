@@ -1,5 +1,8 @@
 <template>
   <div>
+    <v-row justify="center">
+      <h2>titulo del contenido</h2>
+    </v-row>
     <v-row>
       <v-col v-for="(cartel, i) in carteles" :key="i" ma-5>
         <v-img :src="`${cartel.src}`" max-width="400px" class="memory">

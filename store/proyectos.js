@@ -36,10 +36,10 @@ export const state = () => ({
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fverti.png?alt=media&token=29dc4054-9a0f-45fb-8078-156695b14685'
       ],
       slider: [
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart-3.png?alt=media&token=e186ee9d-c997-4fcf-a6e8-99c5be83b44c',
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart.png?alt=media&token=6ca67f69-3d5a-46ee-9719-95f8f47e799b',
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart-1.png?alt=media&token=f8d20673-b700-40f3-a091-635faca19b85',
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart-2.png?alt=media&token=2f1a69cc-a697-42cf-a95f-a5a09bb165f5'
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart-3.png?alt=media&token=e186ee9d-c997-4fcf-a6e8-99c5be83b44chttps://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart-1.png?alt=media&token=888060ba-3036-469b-84f4-6f79db46647e',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart-2.png?alt=media&token=3fa6ef80-bf5d-45d7-8773-bac5c4209eda',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart-3.png?alt=media&token=d9dbf59d-af2d-4aba-97fc-c6728afd9dc1',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fartropoart.png?alt=media&token=22b228a1-6b5b-4c14-9501-8ff1f8e27c8e'
       ]
     },
     {

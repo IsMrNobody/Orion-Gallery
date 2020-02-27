@@ -4,38 +4,25 @@ export const state = () => ({
       titulo: 'Naturaleza',
       subtitulo: 'Tigre, Colibri, Naturaleza',
       src:
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload.png?alt=media&token=76fc1cd1-c036-4a97-9af8-0d66f6fc69d0',
-      dialog: [
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Fcard.png?alt=media&token=96cd7797-a3bb-4656-bb99-7e0c0dd9c124'
-      ]
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Funicos%2Fbuda%20loto_4.png?alt=media&token=486d3408-3ac5-487f-94c0-046e4449716b'
+    },
+    {
+      titulo: 'Ganesh',
+      subtitulo: 'Ganesha zen',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Funicos%2Fbuda%20loto_2.png?alt=media&token=607ef3e6-0c3c-46b9-9355-fc95cba6db23'
     },
     {
       titulo: 'Artropoart',
       subtitulo: 'Colección de artopodos',
       src:
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload_1.png?alt=media&token=07a8f743-e18c-409d-89f8-c8f54f7d1941',
-      dialog: [
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F02%2Fverti.png?alt=media&token=29dc4054-9a0f-45fb-8078-156695b14685'
-      ]
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Funicos%2Fbuda%20loto_1.png?alt=media&token=273ec08b-6e52-4d28-a5a2-b1d1ca22ed4d'
     },
     {
       titulo: 'Budas',
       subtitulo: 'Budas zen',
       src:
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload_1.png?alt=media&token=07a8f743-e18c-409d-89f8-c8f54f7d1941',
-      gdialog: [
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F03%2Fverti.png?alt=media&token=5926605a-a768-4ab0-8d25-b1040115276d'
-      ]
-    },
-    {
-      titulo: 'Ganesha',
-      subtitulo: 'Ganesh medicine',
-      src:
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fload.png?alt=media&token=76fc1cd1-c036-4a97-9af8-0d66f6fc69d0',
-      link: '/',
-      dialog: [
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F04%2Fverti.png?alt=media&token=35ce4b03-b172-421a-9d0f-7b9faaf5c167'
-      ]
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Funicos%2Ffront_2.png?alt=media&token=ef378e5f-f729-4f6a-ad91-d79ec610bc4d'
     }
   ]
 })

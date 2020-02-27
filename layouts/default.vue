@@ -47,7 +47,7 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
+    <!-- <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
         <v-list-item @click.native="right = !right">
           <v-list-item-action>
@@ -58,7 +58,7 @@
           <v-list-item-title>Switch drawer (click me)</v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-footer :fixed="fixed" color="black" app>
       <span>&copy; 2020</span>
     </v-footer>

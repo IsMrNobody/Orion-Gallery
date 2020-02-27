@@ -6,7 +6,7 @@
     <div class="text-center">
       <v-icon>mdi-account-circle</v-icon>
       <h1>Orion</h1>
-      <p>Orion</p>
+      <p>Gallery</p>
     </div>
   </v-parallax>
 </template>

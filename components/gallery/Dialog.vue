@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" max-width="380px">
+  <v-dialog v-model="dialog" max-width="600px">
     <!-- lo que esta dentro de template es lo que se ve por fuera del dialogo -->
     <template v-slot:activator="{ on }">
       <v-card class="mx-auto tarjeta elevation-10" max-width="250px">
@@ -21,7 +21,7 @@
     <!-- y lo que esta fuera de template, esta dentro de el dialogo (suena loco no?) -->
     <!-- de aqui para abajo todo estara dentro del dialogo -->
     <v-card flat class="black">
-      <v-img :src="elemento.src" aspect-ratio="1" />
+      <v-img :src="elemento.src" />
       <!-- <v-card-title>
         <span class="headline">title</span>
       </v-card-title>
