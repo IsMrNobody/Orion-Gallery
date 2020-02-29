@@ -19,11 +19,11 @@ export const state = () => ({
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Fcard.png?alt=media&token=96cd7797-a3bb-4656-bb99-7e0c0dd9c124'
       ],
       slider: [
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Famplio.png?alt=media&token=a0974210-7bfb-4ae2-a361-fb949ab53b9e',
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Fpinta.png?alt=media&token=54927b16-f256-4aaa-8117-6e30d7a629c3',
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Famplio_2.png?alt=media&token=738a5d6d-3f90-4ce1-9f0f-bd0a0fe9bc9d',
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Famplio_3.png?alt=media&token=299854c7-31e9-43a1-b791-bb65c60639c3',
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Famplio_4.png?alt=media&token=23e074bf-9a93-4c29-ab3b-27c924014c2d'
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Fpinta_3.png?alt=media&token=2c8780b3-6eee-4508-b6c4-b05a244dd9bf',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Famplio.png?alt=media&token=a0974210-7bfb-4ae2-a361-fb949ab53b9e',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Fpinta_2.png?alt=media&token=66f96e76-9361-4fe8-9461-cc62b0dcee50',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Fpinta_4.png?alt=media&token=7e3430cb-f44f-4fc4-bd83-c02ca73bb466'
       ]
     },
     {

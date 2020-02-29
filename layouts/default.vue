@@ -2,8 +2,8 @@
   <v-app dark class="bg">
     <v-navigation-drawer
       v-model="drawer"
-      :mini-variant="miniVariant"
       :clipped="clipped"
+      mini-variant
       fixed
       class="nav"
       app
@@ -27,9 +27,9 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed flat app color="transparent">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn @click.stop="miniVariant = !miniVariant" icon>
+      <!-- <v-btn @click.stop="miniVariant = !miniVariant" icon>
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
+      </v-btn> -->
       <!-- <v-btn @click.stop="clipped = !clipped" icon>
         <v-icon>mdi-application</v-icon>
       </v-btn> -->

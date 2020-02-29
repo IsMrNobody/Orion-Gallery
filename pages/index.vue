@@ -18,6 +18,7 @@
     <v-col>
       <Cartas />
     </v-col>
+    <Video />
   </v-row>
 </template>
 
@@ -28,6 +29,7 @@ import Contain from '@/components/inicio/Contain.vue'
 import Paral from '@/components/inicio/Paral.vue'
 import Cartas from '@/components/inicio/Cartas.vue'
 import Parrafo1 from '@/components/inicio/Parrafo1.vue'
+import Video from '@/components/inicio/Video.vue'
 export default {
   components: {
     // Flotante,
@@ -35,6 +37,7 @@ export default {
     Contain,
     Paral,
     Cartas,
+    Video,
     Parrafo1
   }
 }

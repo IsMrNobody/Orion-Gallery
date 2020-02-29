@@ -1,9 +1,11 @@
 <template>
   <div>
     <v-row row justify="center" align-center>
-      <v-toolbarIcon class="pb">
-        <img width="250px" src="logorion.png" alt="" />
-      </v-toolbarIcon>
+      <nuxt-link to="/">
+        <v-toolbarIcon class="pb">
+          <img width="250px" src="logorion.png" alt="" />
+        </v-toolbarIcon>
+      </nuxt-link>
       <Carousel1 />
       <v-col>
         <Slider />
