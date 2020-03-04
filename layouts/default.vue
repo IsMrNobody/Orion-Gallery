@@ -105,4 +105,7 @@ export default {
 .nav {
   background-image: linear-gradient(rgb(16, 3, 27), rgb(0, 0, 0));
 }
+.poss {
+  position: absolute;
+}
 </style>
