@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 .top {
-  margin-top: -4%;
+  margin-top: -80px;
 }
 .mode {
   mix-blend-mode: screen;

@@ -19,13 +19,6 @@
 
     <v-card flat class="black">
       <v-img :src="elemento.src" />
-      <!-- <v-card-title>
-        <span class="headline">title</span>
-      </v-card-title>
-      <v-card-text>
-        <hr color="red" />
-        <p>Descrip</p>
-      </v-card-text> -->
       <v-card-actions>
         <v-btn @click="dialog = false" color="orange" text>
           Regresar
@@ -37,12 +30,9 @@
 
 <script>
 export default {
-  // aqui recibes los datos que le pasaste a v-dialog en el otro archivo
   props: {
     elemento: {
-      // le especificas que es un objeto
       type: Object,
-      // y que si no le pasas la informacion, se despliega con este relleno
       default: () => ({
         titulo: 'Orion Gallery',
         subtitulo: 'Orion Gallery',

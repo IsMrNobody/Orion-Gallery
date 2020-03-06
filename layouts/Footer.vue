@@ -8,7 +8,7 @@
         <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
           <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
-        <v-btn @click="$vuetify.goTo(0)" icon class="mr-0" title="Go to top">
+        <v-btn @click="$vuetify.goTo(0)" icon class="mr-0" title="up">
           <v-icon>mdi-star-four-points</v-icon>
         </v-btn>
       </v-card-title>

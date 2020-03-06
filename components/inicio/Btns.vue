@@ -18,12 +18,37 @@
 <style scoped>
 .botones {
   z-index: 1;
+  animation: bot 6s;
+}
+
+@keyframes bot {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .logo {
   z-index: 1;
 }
 .log {
-  max-width: 450px;
   width: 90vw;
+  max-width: 450px;
+  animation: log 3s;
+}
+
+@keyframes log {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 </style>

@@ -47,9 +47,9 @@ export default {
 
 <style scoped>
 .memory {
-  background-image: radial-gradient(rgb(65, 15, 105), rgb(0, 0, 0));
   height: 200px;
   transition: 0.4s;
+  background-image: radial-gradient(rgb(65, 15, 105), rgb(0, 0, 0));
 }
 .memory:hover {
   padding-top: 200px;

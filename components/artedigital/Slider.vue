@@ -44,12 +44,12 @@ export default {
 
   computed: {
     galerias() {
-      return this.$store.state.proyectos.galerias2
+      return this.$store.state.artedigital.galerias2
     }
   },
   methods: {
     verProyecto(i) {
-      this.$store.dispatch('proyectos/proyectoActual', i)
+      this.$store.dispatch('artedigital/proyectoActual', i)
     }
   }
 }

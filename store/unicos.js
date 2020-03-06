@@ -24,5 +24,49 @@ export const state = () => ({
       src:
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Funicos%2Ffront_2.png?alt=media&token=ef378e5f-f729-4f6a-ad91-d79ec610bc4d'
     }
+  ],
+  digital: [
+    {
+      titulo: 'Budas',
+      subtitulo: 'Budas zen',
+      src: 'orion.jpg'
+    },
+    {
+      titulo: 'Naturaleza',
+      subtitulo: 'Tigre, Colibri, Naturaleza',
+      src: 'orion.jpg'
+    },
+    {
+      titulo: 'Ganesh',
+      subtitulo: 'Ganesha zen',
+      src: 'orion.jpg'
+    },
+    {
+      titulo: 'Artropoart',
+      subtitulo: 'Colección de artopodos',
+      src: 'orion.jpg'
+    }
+  ],
+  diseños: [
+    {
+      titulo: 'Budas',
+      subtitulo: 'Budas zen',
+      src: 'pi.jpg'
+    },
+    {
+      titulo: 'Naturaleza',
+      subtitulo: 'Tigre, Colibri, Naturaleza',
+      src: 'pi.jpg'
+    },
+    {
+      titulo: 'Ganesh',
+      subtitulo: 'Ganesha zen',
+      src: 'pi.jpg'
+    },
+    {
+      titulo: 'Artropoart',
+      subtitulo: 'Colección de artopodos',
+      src: 'pi.jpg'
+    }
   ]
 })

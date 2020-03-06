@@ -9,7 +9,6 @@
       </v-col>
     </v-row>
     <v-row>
-      <!-- aqui haces el v-for fuera del elemento y metes el elemento Dialog dentro para poder pasarle los datos -->
       <v-col v-for="(unico, i) in unicos" :key="i">
         <Dialog :elemento="unico" />
       </v-col>
@@ -18,10 +17,10 @@
 </template>
 
 <script>
-import Carousel1 from '@/components/gallery/Carousel1.vue'
-import Slider from '@/components/gallery/Slider.vue'
+import Carousel1 from '@/components/diseños/Carousel1.vue'
+import Slider from '@/components/diseños/Slider.vue'
 import Frase from '@/components/gallery/Frase.vue'
-import Dialog from '@/components/gallery/Dialog.vue'
+import Dialog from '@/components/diseños/Dialog.vue'
 import Logo from '@/components/inicio/Logo.vue'
 export default {
   components: {
@@ -31,10 +30,9 @@ export default {
     Logo,
     Frase
   },
-  // aqui traes unicos desde vuex
   computed: {
     unicos() {
-      return this.$store.state.unicos.unidad
+      return this.$store.state.unicos.diseños
     }
   }
 }
@@ -47,11 +45,9 @@ export default {
 @keyframes log {
   0% {
     opacity: 0;
-    /* margin-top: -5vh; */
   }
   100% {
     opacity: 1;
-    /* margin-top: 0; */
   }
 }
 </style>

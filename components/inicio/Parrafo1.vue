@@ -2,7 +2,6 @@
   <div>
     <v-col pa-5 pl-5 ma-5>
       <div class="text-center hidden-sm-and-up">
-        <h1>Orion Gallery</h1>
         <h2>Desde las constelaciones</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita
@@ -26,8 +25,18 @@
         </p>
       </v-row>
     </div>
+    <Paral />
   </div>
 </template>
+
+<script>
+import Paral from '@/components/inicio/Paral.vue'
+export default {
+  components: {
+    Paral
+  }
+}
+</script>
 
 <style scoped>
 .pad {

@@ -41,17 +41,17 @@
 export default {
   data: () => ({
     dialog: false,
-    titulo: 'Piezas de Arte'
+    titulo: 'Diseño'
   }),
   computed: {
     galerias() {
-      return this.$store.state.proyectos.galerias
+      return this.$store.state.diseños.galerias
     }
   },
   methods: {
     verProyecto(i) {
-      this.$store.dispatch('proyectos/proyectoActual', i)
-      this.$router.push('/gallery')
+      this.$store.dispatch('diseños/proyectoActual', i)
+      this.$router.push('/diseños')
     }
   }
 }
