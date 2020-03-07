@@ -3,7 +3,7 @@
     <v-col cols="6">
       <v-text-field v-model="correo" hint="Tu Correo"></v-text-field>
       <v-text-field v-model="clave" hint="Tu Clave"></v-text-field>
-      <v-btn @click="registrar" type="submit" color="violet" flat ripple>
+      <v-btn @click="registrar" type="submit" color="violet" text ripple>
         Enviar
       </v-btn>
     </v-col>
