@@ -1,20 +1,31 @@
 <template>
-  <v-row column justify="center">
-    <v-col cols="6">
-      <v-text-field v-model="correo" hint="Tu Correo"></v-text-field>
-      <v-text-field v-model="clave" hint="Tu Clave"></v-text-field>
-      <v-btn @click="registrar" type="submit" color="violet" flat ripple>
-        Enviar
-      </v-btn>
-    </v-col>
-  </v-row>
+  <div>
+    <!-- <Lottie :options="defaultOptions" /> -->
+    <v-row column justify="center">
+      <v-col cols="6">
+        <v-text-field v-model="correo" hint="Tu Correo"></v-text-field>
+        <v-text-field v-model="clave" hint="Tu Clave"></v-text-field>
+        <v-btn @click="animationView" type="submit" color="violet" flat ripple>
+          Enviar
+        </v-btn>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
+// import Lottie from '@/components/Lottie.vue'
+
+import * as animationData from '@/assets/dataa.json'
+
 export default {
+  components: {
+    // Lottie
+  },
   data: () => ({
     clave: '', // ok como ahora tienes estas variables aqui y estas capturando lo
-    correo: '' // campos de texto, entonces ahora los llamamos dentro del metodo
+    correo: '', // campos de texto, entonces ahora los llamamos dentro del metodo
+    defaultOptions: { animationData }
   }),
   methods: {
     registrar() {
