@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div>
     <!-- <Lottie :options="defaultOptions" /> -->
     <v-row column justify="center">
@@ -12,17 +11,6 @@
       </v-col>
     </v-row>
   </div>
-=======
-  <v-row column justify="center">
-    <v-col cols="6">
-      <v-text-field v-model="correo" hint="Tu Correo"></v-text-field>
-      <v-text-field v-model="clave" hint="Tu Clave"></v-text-field>
-      <v-btn @click="registrar" type="submit" color="violet" text ripple>
-        Enviar
-      </v-btn>
-    </v-col>
-  </v-row>
->>>>>>> 8314d09bb1e890d9c80bde75cc4e4f944393b0f6
 </template>
 
 <script>
