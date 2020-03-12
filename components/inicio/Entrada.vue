@@ -2,7 +2,7 @@
   <div justify="center">
     <v-img class="img" src="bg.png">
       <v-row align="center" justify="center">
-        <Logo class="pad" />
+        <Logo class="log" />
         <v-btn to="home" class="bot">Entrar</v-btn>
       </v-row>
       <video
@@ -52,9 +52,9 @@ export default {
   height: 100vh;
   animation: tras 8s;
 }
-.pad {
+.log {
   margin-top: 40vh;
-  animation: log 3s;
+  /* animation: log 3s; */
   position: absolute;
 }
 @keyframes log {

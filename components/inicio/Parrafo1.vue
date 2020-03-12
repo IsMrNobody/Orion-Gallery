@@ -13,9 +13,10 @@
     <div class="ma-5 text-center hidden-xs-only">
       <v-row justify="center">
         <div class="display-3">
+          <Lottie :options="defaultOptions" />
+          <!-- <v-icon>mdi-star-four-points</v-icon>
           <v-icon>mdi-star-four-points</v-icon>
-          <v-icon>mdi-star-four-points</v-icon>
-          <v-icon>mdi-star-four-points</v-icon>
+          <v-icon>mdi-star-four-points</v-icon> -->
         </div>
         <p class="pad text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui dolor
@@ -31,10 +32,17 @@
 
 <script>
 import Paral from '@/components/inicio/Paral.vue'
+import Lottie from '@/components/Lottie.vue'
+
+import * as animationData from '@/assets/horizontal.json'
 export default {
   components: {
-    Paral
-  }
+    Paral,
+    Lottie
+  },
+  data: () => ({
+    defaultOptions: { animationData }
+  })
 }
 </script>
 
