@@ -13,18 +13,19 @@
             height="300px"
             width="100%"
           >
-            <v-card-title>{{ galeria.titulo }}</v-card-title>
           </v-img>
+
+          <v-card-title>{{ galeria.titulo }}</v-card-title>
 
           <v-card-subtitle class="text-left pb-0">{{
             galeria.subtitulo
           }}</v-card-subtitle>
 
-          <v-card-text class="text--primary text-left">
+          <!-- <v-card-text class="text--primary text-left">
             <div>Whitehaven Beach</div>
 
             <div>Whitsunday Island, Whitsunday Islands</div>
-          </v-card-text>
+          </v-card-text> -->
 
           <v-card-actions>
             <v-btn @click="verProyecto(i)" color="orange" text>

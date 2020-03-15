@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" max-width="600px">
+  <v-dialog v-model="dialog" max-width="580px">
     <template v-slot:activator="{ on }">
       <v-card class="mx-auto tarjeta elevation-10" max-width="250px">
         <v-img
@@ -11,26 +11,22 @@
           width="100%"
         ></v-img>
         <v-card-title>{{ elemento.titulo }}</v-card-title>
-        <v-card-subtitle class="text-left pb-0">
-          {{ elemento.subtitulo }}
-        </v-card-subtitle>
       </v-card>
     </template>
 
     <v-card flat class="black">
-      <v-img :src="elemento.src" />
-      <!-- <v-card-title>
-        <span class="headline">title</span>
-      </v-card-title>
-      <v-card-text>
-        <hr color="red" />
-        <p>Descrip</p>
-      </v-card-text> -->
-      <v-card-actions>
-        <v-btn @click="dialog = false" color="orange" text>
-          Regresar
-        </v-btn>
-      </v-card-actions>
+      <v-img :src="elemento.src">
+        <v-card-title>
+          {{ elemento.titulo }}
+          <v-spacer></v-spacer>
+          <v-btn @click="dialog = false" small icon color="" text>
+            <v-icon small>mdi-star-four-points</v-icon>
+          </v-btn>
+        </v-card-title>
+      </v-img>
+      <v-card-subtitle class="text-left pt-4">
+        {{ elemento.subtitulo }}
+      </v-card-subtitle>
     </v-card>
   </v-dialog>
 </template>

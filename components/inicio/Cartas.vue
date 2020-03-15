@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row justify="center">
-      <h2>titulo del contenido</h2>
+      <h2>El cinturon de Orion</h2>
     </v-row>
     <v-row>
       <v-col v-for="(cartel, i) in carteles" :key="i" ma-5>
@@ -10,10 +10,9 @@
         </v-img>
       </v-col>
       <p class="text-center alegreya pad">
-        Lorem2 ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-        autem, repellendus maxime ea iure necessitatibus voluptatibus cum harum
-        ab repellat sapiente dolore amet unde corrupti suscipit voluptatem eius
-        recusandae voluptate.
+        En nuestra constelación existen infinitas formas de mostrar una
+        realidad, en Orion Gallery podrás dar un vistazo de lo mucho que tenemos
+        que decir con tan pocas palabras.
       </p>
     </v-row>
   </div>

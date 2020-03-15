@@ -4,9 +4,11 @@
       <div class="text-center hidden-sm-and-up">
         <h2>Desde las constelaciones</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita
-          hic dicta cum facilis ex asperiores sit dolorem neque maiores rem
-          adipisci sint tempora blanditiis, tenetur et similique unde culpa.
+          La constelación de Orion se ve desde todos los puntos de nuestro
+          planeta y han sido conocidas por todas las civilizaciones de todos los
+          tiempos. Los Egipcios, los Vikingos, Los Maya, Los Griegos, los
+          Romanos... Mas alla de los siglos, si levantamos la vista aún podemos
+          ver y admirar lo mismo que vieron ellos, nuestros ancestros.
         </p>
       </div>
     </v-col>
@@ -19,10 +21,11 @@
           <v-icon>mdi-star-four-points</v-icon> -->
         </div>
         <p class="pad text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui dolor
-          quos, dolores ipsum voluptatem impedit odit laboriosam accusamus
-          asperiores velit esse consequatur vitae, sunt inventore fugit
-          dignissimos hic dolorum.
+          La constelación de Orion se ve desde todos los puntos de nuestro
+          planeta y han sido conocidas por todas las civilizaciones de todos los
+          tiempos. Los Egipcios, los Vikingos, Los Maya, Los Griegos, los
+          Romanos... Mas alla de los siglos, si levantamos la vista aún podemos
+          ver y admirar lo mismo que vieron ellos, nuestros ancestros.
         </p>
       </v-row>
     </div>

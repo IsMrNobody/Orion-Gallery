@@ -13,17 +13,18 @@
             height="300px"
             width="100%"
           >
-            <v-card-title>{{ galeria.titulo }}</v-card-title>
           </v-img>
+
+          <v-card-title>{{ galeria.titulo }}</v-card-title>
 
           <v-card-subtitle class="text-left pb-0">{{
             galeria.subtitulo
           }}</v-card-subtitle>
 
           <v-card-text class="text--primary text-left">
-            <div>Whitehaven Beach</div>
+            <!-- <div>{{ galeria.sub }}</div> -->
 
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <!-- <div>Whitsunday Island, Whitsunday Islands</div> -->
           </v-card-text>
 
           <v-card-actions>
@@ -41,7 +42,7 @@
 export default {
   data: () => ({
     dialog: false,
-    titulo: 'Arte Gigital'
+    titulo: 'Arte Digital'
   }),
   computed: {
     galerias() {

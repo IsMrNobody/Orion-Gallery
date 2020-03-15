@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .anim {
-  margin-top: -19vh;
+  margin-top: -20vh;
   animation: log 3s;
 }
 @keyframes log {

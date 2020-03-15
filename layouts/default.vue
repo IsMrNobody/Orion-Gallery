@@ -81,12 +81,23 @@ export default {
         {
           icon: 'mdi-star-four-points',
           title: 'Inicio',
-          to: '/'
+          to: 'home'
         },
         {
           icon: 'mdi-star-four-points',
           title: 'Gallery',
+          alt: 'Galeria',
           to: '/gallery'
+        },
+        {
+          icon: 'mdi-star-four-points',
+          title: 'Arte Digital',
+          to: '/artedigital'
+        },
+        {
+          icon: 'mdi-star-four-points',
+          title: 'Diseño',
+          to: '/diseños'
         }
       ],
       miniVariant: false,

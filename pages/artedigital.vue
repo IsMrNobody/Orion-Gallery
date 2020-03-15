@@ -1,7 +1,8 @@
 <template>
   <div>
-    <v-row row justify="center" align-center>
-      <Logo class="anim" />
+    <Logo2 class="anim" />
+    <v-row justify="center" align-center>
+      <h3 v-for="(item, i) in proyectoActual.sub" :key="i">{{ item }}</h3>
       <Carousel1 />
       <v-col>
         <Slider />
@@ -21,18 +22,21 @@ import Carousel1 from '@/components/artedigital/Carousel1.vue'
 import Slider from '@/components/artedigital/Slider.vue'
 import Frase from '@/components/gallery/Frase.vue'
 import Dialog from '@/components/artedigital/Dialog.vue'
-import Logo from '@/components/inicio/Logo.vue'
+import Logo2 from '@/components/Logo2.vue'
 export default {
   components: {
     Carousel1,
     Slider,
     Dialog,
-    Logo,
+    Logo2,
     Frase
   },
   computed: {
     unicos() {
       return this.$store.state.unicos.digital
+    },
+    proyectoActual() {
+      return this.$store.state.artedigital.proyectoActual
     }
   }
 }
@@ -40,6 +44,7 @@ export default {
 
 <style scoped>
 .anim {
+  margin-top: -20vh;
   animation: log 3s;
 }
 @keyframes log {

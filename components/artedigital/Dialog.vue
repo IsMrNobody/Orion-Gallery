@@ -11,19 +11,22 @@
           width="100%"
         ></v-img>
         <v-card-title>{{ elemento.titulo }}</v-card-title>
-        <v-card-subtitle class="text-left pb-0">
-          {{ elemento.subtitulo }}
-        </v-card-subtitle>
       </v-card>
     </template>
 
     <v-card flat class="black">
-      <v-img :src="elemento.src" />
-      <v-card-actions>
-        <v-btn @click="dialog = false" color="orange" text>
-          Regresar
-        </v-btn>
-      </v-card-actions>
+      <v-img :src="elemento.src">
+        <v-card-title>
+          {{ elemento.titulo }}
+          <v-spacer></v-spacer>
+          <v-btn @click="dialog = false" small icon color="" text>
+            <v-icon small>mdi-star-four-points</v-icon>
+          </v-btn>
+        </v-card-title>
+      </v-img>
+      <v-card-subtitle class="text-left pt-4 tx">
+        {{ elemento.subtitulo }}
+      </v-card-subtitle>
     </v-card>
   </v-dialog>
 </template>
@@ -58,5 +61,8 @@ p {
 }
 .tarjeta:hover {
   opacity: 1;
+}
+.tx {
+  font-family: fantasy;
 }
 </style>
