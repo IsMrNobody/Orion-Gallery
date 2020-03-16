@@ -23,7 +23,7 @@
 <script>
 export default {
   data: () => ({
-    icons: ['mdi-facebook', 'mdi-instagram', 'mdi-instagram']
+    icons: ['mdi-facebook', 'mdi-instagram']
   })
 }
 </script>

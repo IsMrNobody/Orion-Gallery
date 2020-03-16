@@ -10,7 +10,7 @@
 <script>
 import Lottie2 from '@/components/Lottie2.vue'
 
-import * as animationData from '@/assets/intro.json'
+import * as animationData from '@/assets/logointro.json'
 
 export default {
   components: {
