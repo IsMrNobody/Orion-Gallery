@@ -1,5 +1,8 @@
-h1, h2 {
+h1 {
     font-family: 'Cinzel Decorative', cursive;
+}
+h3, h2 {
+  font-family: 'Roboto', sans-serif;
 }
 p {
     font-family: 'Alegreya SC', serif;

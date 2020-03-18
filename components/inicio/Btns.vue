@@ -6,10 +6,11 @@
       </v-toolbarIcon>
     </v-row>
     <v-row justify="center">
-      <v-toolbarTitle class="botones">
+      <v-toolbarTitle class="botones ma-5">
         <!-- <v-btn text to="/">inicio</v-btn> -->
-        <v-btn text color="" to="gallery">Gallery</v-btn>
-        <v-btn text color="" to="contacto">Contacto</v-btn>
+        <v-btn text to="gallery">Mintaka</v-btn>
+        <v-btn text to="artedigital">Alnilam</v-btn>
+        <v-btn text to="diseños">Alnitak</v-btn>
       </v-toolbarTitle>
     </v-row>
   </div>
@@ -17,6 +18,7 @@
 
 <style scoped>
 .botones {
+  font-family: 'aladin, cusive';
   z-index: 1;
   animation: bot 6s;
 }

@@ -12,11 +12,13 @@
     <v-col>
       <Cartas />
     </v-col>
+    <End />
   </v-row>
 </template>
 
 <script>
 import Intro from '@/components/inicio/Intro.vue'
+import End from '@/components/inicio/End.vue'
 import Parrafo1 from '@/components/inicio/Parrafo1.vue'
 import Contain from '@/components/inicio/Contain.vue'
 import Contain2 from '@/components/inicio/Contain2.vue'
@@ -25,6 +27,7 @@ import Cartas from '@/components/inicio/Cartas.vue'
 export default {
   components: {
     Intro,
+    End,
     Parrafo1,
     Contain,
     Contain2,

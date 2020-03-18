@@ -4,11 +4,19 @@
     src="https://cdn.mos.cms.futurecdn.net/reaVPYbHtVWG8WHFPrgdvB.jpg"
   >
     <div class="text-center">
-      <v-icon>mdi-account-circle</v-icon>
-      <h1>Orion</h1>
-      <h2>Una vuelta por la constalacion mas facinante</h2>
+      <v-icon class="pb-5">mdi-star-four-points</v-icon>
+      <!-- <h1>Orión</h1> -->
+      <h2>Una vuelta por la constelación más asombrosa de la galaxia</h2>
     </div>
   </v-parallax>
 </template>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  font-size: 4em;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+</style>

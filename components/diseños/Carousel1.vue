@@ -1,5 +1,11 @@
 <template>
-  <v-carousel hide-delimiters show-arrows-on-hover height="600px" cycle>
+  <v-carousel
+    hide-delimiters
+    show-arrows-on-hover
+    height="600px"
+    width="auto"
+    cycle
+  >
     <v-carousel-item
       v-for="(item, i) in proyectoActual.slider"
       :key="i"

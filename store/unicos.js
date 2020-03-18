@@ -81,6 +81,14 @@ export const state = () => ({
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Funicos%2Fdigital%2Finsecto.png?alt=media&token=bea52447-b2f5-4e02-bfc0-9c26844ed12c'
     },
     {
+      titulo: 'cat',
+      subtitulo: 'Digital draw',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2FarteDigital%2Funicos%2Fmondays.png?alt=media&token=dde703f3-2a12-4f7d-81f8-7fc734d553ac'
+    }
+  ],
+  digital2: [
+    {
       titulo: 'Libelula de fuego',
       subtitulo: 'Digital draw',
       src:
@@ -103,12 +111,6 @@ export const state = () => ({
       subtitulo: 'Digital draw',
       src:
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2FarteDigital%2Funicos%2Fperros.png?alt=media&token=5d052ff8-3a51-418b-a08d-0b07e1d7cb35'
-    },
-    {
-      titulo: 'cat',
-      subtitulo: 'Digital draw',
-      src:
-        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2FarteDigital%2Funicos%2Fmondays.png?alt=media&token=dde703f3-2a12-4f7d-81f8-7fc734d553ac'
     },
     {
       titulo: 'Gorila',

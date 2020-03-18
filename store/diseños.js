@@ -5,7 +5,7 @@ export const state = () => ({
     src: '',
     link: '',
     slider: [
-      'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2F01%2Famplio.png?alt=media&token=a0974210-7bfb-4ae2-a361-fb949ab53b9e'
+      'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F01%2Fcdlog.png?alt=media&token=9cbfa7f3-0fc1-45c7-a1e7-c419c72c0cbd'
     ]
   },
   galerias: [

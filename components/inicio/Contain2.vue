@@ -1,8 +1,13 @@
 <template>
   <v-container>
-    <v-row justify="">
-      <h1 class="pl-5 ml-5 pb-5">{{ titulo }}</h1>
+    <v-row>
+      <h1 class="pl-2 ml-3 pb-4">
+        <v-icon class="ho">mdi-star-four-points</v-icon>
+        {{ titulo }}
+      </h1>
     </v-row>
+    <h2 class="pl-5 ml-5">{{ sub }}</h2>
+    <h3 class="pl-5 ml-5 mb-4">{{ des }}</h3>
     <v-row>
       <v-col v-for="(galeria, i) in galerias" :key="i">
         <v-card class="mx-auto tarjeta elevation-10" max-width="350px">
@@ -42,7 +47,10 @@
 export default {
   data: () => ({
     dialog: false,
-    titulo: 'Arte Digital'
+    titulo: 'Alnilam',
+    sub: 'Arte Digital',
+    des:
+      'Una muestra de todo lo que se puede alcanzar si se fuciona tecnologia y mente humana'
   }),
   computed: {
     galerias() {
@@ -59,6 +67,9 @@ export default {
 </script>
 
 <style scoped>
+.ho:hover {
+  transform: rotate(180deg);
+}
 .fotos {
   width: 20px;
   height: 20px;
@@ -90,5 +101,19 @@ export default {
 .tarjeta:hover {
   opacity: 1;
   margin-top: -5%;
+}
+h1 {
+  transition: 1s;
+  font-size: 2.5em;
+  color: #c62828;
+}
+h1:hover {
+  letter-spacing: 10px;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
 }
 </style>

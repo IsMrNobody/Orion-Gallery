@@ -1,8 +1,14 @@
 <template>
   <v-container>
     <v-row justify="">
-      <h1 class="pl-5 ml-5 pb-5">{{ titulo }}</h1>
+      <h1 class="pl-2 ml-3 pb-4">
+        <v-icon class="ho">mdi-star-four-points</v-icon>
+        {{ titulo }}
+        <!-- <v-icon right>mdi-star-four-points</v-icon> -->
+      </h1>
     </v-row>
+    <h2 class="pl-5 ml-5">{{ sub }}</h2>
+    <h3 class="pl-5 ml-5 mb-4">{{ des }}</h3>
     <v-row>
       <v-col v-for="(galeria, i) in galerias" :key="i">
         <v-card class="mx-auto tarjeta elevation-10" max-width="350px">
@@ -42,7 +48,10 @@
 export default {
   data: () => ({
     dialog: false,
-    titulo: 'Diseño'
+    titulo: 'Alnitak',
+    sub: 'Diseño Gráfico',
+    des:
+      'Contribuimos con la creación de identidades coorporativas de marcas con visión del nuevo mundo'
   }),
   computed: {
     galerias() {
@@ -59,6 +68,9 @@ export default {
 </script>
 
 <style scoped>
+.ho:hover {
+  transform: rotate(180deg);
+}
 .fotos {
   width: 20px;
   height: 20px;
@@ -90,5 +102,19 @@ export default {
 .tarjeta:hover {
   opacity: 1;
   margin-top: -5%;
+}
+h1 {
+  transition: 1s;
+  font-size: 2.5em;
+  color: #8e24aa;
+}
+h1:hover {
+  letter-spacing: 10px;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
 }
 </style>

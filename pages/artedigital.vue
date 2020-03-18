@@ -1,26 +1,35 @@
 <template>
-  <div>
-    <v-row justify="center">
-      <Logo2 class="anim" />
-    </v-row>
-    <!-- <Descrip /> -->
-    <v-row justify="center" align-center>
-      <Carousel1 />
-      <v-col>
-        <Slider />
-        <Frase />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col v-for="(unico, i) in unicos" :key="i">
-        <Dialog :elemento="unico" />
-      </v-col>
-    </v-row>
-  </div>
+  <v-row>
+    <v-col>
+      <v-row justify="center">
+        <Logo2 class="anim" />
+      </v-row>
+      <!-- <Descrip /> -->
+      <v-row justify="center" align-center>
+        <Carousel1 />
+        <v-col>
+          <Slider />
+          <Frase />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col v-for="(unico, i) in unicos" :key="i">
+          <Dialog :elemento="unico" />
+        </v-col>
+      </v-row>
+      <Banner class="mt-5 mb-5" />
+      <v-row>
+        <v-col v-for="(unico, i) in unicos2" :key="i">
+          <Dialog :elemento="unico" />
+        </v-col>
+      </v-row>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
 import Carousel1 from '@/components/artedigital/Carousel1.vue'
+import Banner from '@/components/artedigital/Banner.vue'
 // import Descrip from '@/components/artedigital/Descrip.vue'
 import Slider from '@/components/artedigital/Slider.vue'
 import Frase from '@/components/gallery/Frase.vue'
@@ -28,6 +37,7 @@ import Dialog from '@/components/artedigital/Dialog.vue'
 import Logo2 from '@/components/Logo2.vue'
 export default {
   components: {
+    Banner,
     Carousel1,
     // Descrip,
     Slider,
@@ -38,6 +48,9 @@ export default {
   computed: {
     unicos() {
       return this.$store.state.unicos.digital
+    },
+    unicos2() {
+      return this.$store.state.unicos.digital2
     },
     proyectoActual() {
       return this.$store.state.artedigital.proyectoActual

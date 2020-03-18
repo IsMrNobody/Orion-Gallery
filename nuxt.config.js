@@ -22,7 +22,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Aladin|Alegreya+SC|Cinzel+Decorative&display=swap'
+          'https://fonts.googleapis.com/css?family=Roboto|Alegreya+SC|Cinzel+Decorative&display=swap'
       }
     ]
   },
