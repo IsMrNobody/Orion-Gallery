@@ -10,7 +10,7 @@
             v-for="(cartel, i) in carteles"
             :key="i"
             class="ma-2"
-            width="350px"
+            width="375px"
           >
             <v-img :src="cartel.src" class="memory">
               <Paral2 />

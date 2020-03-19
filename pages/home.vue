@@ -11,8 +11,8 @@
     </div>
     <v-col>
       <Cartas />
+      <End />
     </v-col>
-    <End />
   </v-row>
 </template>
 
