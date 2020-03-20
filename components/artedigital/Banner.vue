@@ -1,18 +1,24 @@
 <template>
   <div>
     <v-row justify="center" align="center" class="re">
-      <!-- <h1>hola</h1> -->
-      <VerVideo />
+      <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/Z6_ZNW1DACE"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </v-row>
   </div>
 </template>
 
 <script>
-import VerVideo from '@/components/artedigital/VerVideo.vue'
+// import VerVideo from '@/components/artedigital/VerVideo.vue'
 
 export default {
   components: {
-    VerVideo
+    // VerVideo
   }
 }
 </script>

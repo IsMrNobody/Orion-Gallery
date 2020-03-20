@@ -13,6 +13,11 @@
         <Dialog :elemento="unico" />
       </v-col>
     </v-row>
+    <v-row>
+      <v-col v-for="(unico, i) in unicos2" :key="i">
+        <Dialog :elemento="unico" />
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -33,6 +38,9 @@ export default {
   computed: {
     unicos() {
       return this.$store.state.unicos.diseños
+    },
+    unicos2() {
+      return this.$store.state.unicos.diseños2
     }
   }
 }

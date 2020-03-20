@@ -1,9 +1,6 @@
 <template>
   <v-row justify="center">
     <div class="">
-      <!-- <v-row justify="center">
-        <Btns class="position" />
-      </v-row> -->
       <v-img class="tra" width="80em" height="80vh">
         <video
           class=""
@@ -18,19 +15,7 @@
   </v-row>
 </template>
 
-<script>
-// import Btns from '@/components/inicio/Btns.vue'
-export default {
-  components: {
-    // Btns
-  }
-}
-</script>
-
 <style scoped>
-.top {
-  /* margin-top: -80px; */
-}
 .mode {
   mix-blend-mode: screen;
   position: absolute;
@@ -38,9 +23,6 @@ export default {
 }
 .position {
   position: absolute;
-}
-.tra {
-  /* animation: tras 8s; */
 }
 
 @keyframes tras {

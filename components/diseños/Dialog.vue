@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" max-width="600px">
+  <v-dialog v-model="dialog" max-width="800px">
     <template v-slot:activator="{ on }">
       <v-card class="mx-auto tarjeta elevation-10" max-width="250px">
         <v-img

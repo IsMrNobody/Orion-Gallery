@@ -137,26 +137,80 @@ export const state = () => ({
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2FarteDigital%2Funicos%2Fstorm.png?alt=media&token=1e6da476-4e62-40d7-9cc3-39a36dff572c'
     }
   ],
-  diseños: [
+  diseños2: [
     {
       titulo: 'Budas',
       subtitulo: 'Budas zen',
-      src: 'pi.jpg'
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flol%20poster.jpg?alt=media&token=a7084c77-59f8-4326-afcb-931e17fc232e'
     },
     {
       titulo: 'Naturaleza',
       subtitulo: 'Tigre, Colibri, Naturaleza',
-      src: 'pi.jpg'
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Ffreppes.jpg?alt=media&token=119d7ebc-ea03-4525-8e2f-09e3b01c0aad'
     },
     {
       titulo: 'Ganesh',
       subtitulo: 'Ganesha zen',
-      src: 'pi.jpg'
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Fproposal%20scooter_2.png?alt=media&token=7f4213d7-d2b9-4f0c-8f5d-d525fe4bd646'
     },
     {
       titulo: 'Artropoart',
       subtitulo: 'Colección de artopodos',
-      src: 'pi.jpg'
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Fmount_2.png?alt=media&token=ad7a927a-38cc-4f12-960d-4dd8ef4a37e5'
+    }
+  ],
+  diseños: [
+    {
+      titulo: 'libro',
+      subtitulo: 'Budas zen',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flibros%2Fbook1.png?alt=media&token=4ae22eaa-bbc6-49a4-8e1b-412a5ca47c88'
+    },
+    {
+      titulo: 'libro',
+      subtitulo: 'Tigre, Colibri, Naturaleza',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flibros%2Fbook2.png?alt=media&token=97136ac3-a6dd-4a09-94aa-7c406f60f1ee'
+    },
+    {
+      titulo: 'libro',
+      subtitulo: 'Ganesha zen',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flibros%2Fbook3-2.png?alt=media&token=01474c52-91e6-4405-9151-be08bfef37ef'
+    },
+    {
+      titulo: 'libro',
+      subtitulo: 'Colección de artopodos',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flibros%2Fbook4.png?alt=media&token=a59068a5-cacb-4ca9-96dc-ef5e39d1fb1a'
+    },
+    {
+      titulo: 'libro',
+      subtitulo: 'Colección de artopodos',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flibros%2Fbook5.png?alt=media&token=2fba6ed2-9c66-4e30-822d-f1078aad28fe'
+    },
+    {
+      titulo: 'libro',
+      subtitulo: 'Colección de artopodos',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flibros%2Fbook6.png?alt=media&token=67ae76ef-9f82-4123-8689-e80422e4182a'
+    },
+    {
+      titulo: 'libro',
+      subtitulo: 'Colección de artopodos',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flibros%2Fbook7.png?alt=media&token=57ebd9b1-e921-4fa1-a1cb-8c88053b7088'
+    },
+    {
+      titulo: 'libro',
+      subtitulo: 'Colección de artopodos',
+      src:
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2Funicos%2Flibros%2Fbook8.png?alt=media&token=928d3e4a-2602-4fde-b1be-af913d3c249d'
     }
   ]
 })
