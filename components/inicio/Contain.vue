@@ -1,8 +1,8 @@
 <template>
   <v-container>
     <v-row justify="">
-      <h1 class="pl-2 ml-3 pb-4 hov">
-        <v-icon class="ho">mdi-star-fours-points</v-icon>
+      <h1 class="pl-2 ml-3 pb-4">
+        <v-icon class="ho">mdi-star-four-points</v-icon>
         {{ titulo }}
       </h1>
     </v-row>
@@ -40,7 +40,7 @@
 export default {
   data: () => ({
     dialog: false,
-    titulo: 'Mintaka',
+    titulo: 'Alnilam',
     sub: 'Piezas de Arte',
     des:
       'Pinceladas con conciencia, de la manera más tradicional traemos tu visión a este plano'

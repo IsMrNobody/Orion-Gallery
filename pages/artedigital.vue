@@ -12,6 +12,7 @@
           <Frase />
         </v-col>
       </v-row>
+      <h1 class="mb-5 mt-5 pt-5">Digital-Art</h1>
       <v-row>
         <v-col v-for="(unico, i) in unicos" :key="i">
           <Dialog :elemento="unico" />
@@ -20,6 +21,12 @@
       <Banner class="mt-5 mb-5" />
       <v-row>
         <v-col v-for="(unico, i) in unicos2" :key="i">
+          <Dialog :elemento="unico" />
+        </v-col>
+      </v-row>
+      <h1 class="mb-5 mt-5 pt-5">Portadas</h1>
+      <v-row>
+        <v-col v-for="(unico, i) in unicos3" :key="i">
           <Dialog :elemento="unico" />
         </v-col>
       </v-row>
@@ -51,6 +58,9 @@ export default {
     },
     unicos2() {
       return this.$store.state.unicos.digital2
+    },
+    unicos3() {
+      return this.$store.state.unicos.digital3
     },
     proyectoActual() {
       return this.$store.state.artedigital.proyectoActual

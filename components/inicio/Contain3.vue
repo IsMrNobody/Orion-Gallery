@@ -48,7 +48,7 @@
 export default {
   data: () => ({
     dialog: false,
-    titulo: 'Alnitak',
+    titulo: 'Mintaka',
     sub: 'Diseño Gráfico',
     des:
       'Contribuimos con la creación de identidades coorporativas de marcas con visión del nuevo mundo'
@@ -106,7 +106,7 @@ export default {
 h1 {
   transition: 1s;
   font-size: 2.5em;
-  color: #8e24aa;
+  color: #3f85ee;
 }
 h1:hover {
   letter-spacing: 10px;

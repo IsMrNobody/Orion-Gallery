@@ -78,6 +78,33 @@ export const state = () => ({
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F03%2FLatam%20White.png?alt=media&token=a75a316f-4a40-4b25-9763-3f21a3a54de0',
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F03%2FLatam.png?alt=media&token=f763444e-0290-4fca-924c-0480794fb6c4'
       ]
+    },
+    {
+      titulo: 'Wow Super Food',
+      group: [
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F05%2Fvert.png?alt=media&token=16c2eb63-651a-42a1-b43a-d65f1b37cde8'
+      ],
+      slider: [
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F05%2F01.png?alt=media&token=ba206765-8267-44f9-8d57-b76e352553b8',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F05%2F02.png?alt=media&token=f257ece7-ece0-443f-9a8b-480b247b658c',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F05%2F03.png?alt=media&token=d17ef38b-471c-4099-8639-ad3b129aae8d',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F05%2F04.png?alt=media&token=161b866f-dddb-4d84-ba0a-50453b8b4eb6',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F05%2F05.png?alt=media&token=8085c79a-d238-4653-a911-3634e4f465a5'
+      ]
+    },
+    {
+      titulo: 'Onawa Angel´s Relax',
+      group: [
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F06%2F07.png?alt=media&token=7337a7b5-595f-436b-b7c6-43f9843951ae'
+      ],
+      slider: [
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F06%2F01.png?alt=media&token=48b6b43d-dfa9-454a-802f-9a006bf81e28',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F06%2F03.png?alt=media&token=07138f37-8b38-4d63-9411-d8229832cf58',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F06%2F02.png?alt=media&token=51c1453d-910e-4e5b-abd3-6350e77217c3',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F06%2F04.png?alt=media&token=c9aebaa8-a41d-46d2-8dda-63e4a1461e6e',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F06%2F05.png?alt=media&token=b1f313a4-6216-4e5c-b6dc-dec11d3c9fd7',
+        'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F06%2F06.png?alt=media&token=d508a700-8489-4c78-b26b-51c32008abb9'
+      ]
     }
   ]
 })

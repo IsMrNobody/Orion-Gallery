@@ -47,7 +47,7 @@
 export default {
   data: () => ({
     dialog: false,
-    titulo: 'Alnilam',
+    titulo: 'Alnitak',
     sub: 'Arte Digital',
     des:
       'Una muestra de todo lo que se puede alcanzar si se fuciona tecnologia y mente humana'
@@ -105,7 +105,7 @@ export default {
 h1 {
   transition: 1s;
   font-size: 2.5em;
-  color: #c62828;
+  color: #ba33d2;
 }
 h1:hover {
   letter-spacing: 10px;

@@ -8,6 +8,7 @@
         <Frase />
       </v-col>
     </v-row>
+    <h1 class="mb-5 mt-5 pt-5">Pinturas</h1>
     <v-row>
       <!-- aqui haces el v-for fuera del elemento y metes el elemento Dialog dentro para poder pasarle los datos -->
       <v-col v-for="(unico, i) in unicos" :key="i">
