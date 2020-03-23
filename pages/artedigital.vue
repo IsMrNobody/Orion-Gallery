@@ -12,7 +12,10 @@
           <Frase />
         </v-col>
       </v-row>
-      <h1 class="mb-5 mt-5 pt-5">Digital-Art</h1>
+      <h1 class="mb-5 mt-5 pt-5 d-flex justify-center justify-sm-start">
+        <v-icon class="ho mx-2">mdi-star-four-points</v-icon>
+        Digital-Art
+      </h1>
       <v-row>
         <v-col v-for="(unico, i) in unicos" :key="i">
           <Dialog :elemento="unico" />
@@ -24,7 +27,10 @@
           <Dialog :elemento="unico" />
         </v-col>
       </v-row>
-      <h1 class="mb-5 mt-5 pt-5">Portadas</h1>
+      <h1 class="mb-5 mt-5 pt-5 d-flex justify-center justify-sm-start">
+        <v-icon class="ho mx-2">mdi-star-four-points</v-icon>
+        Portadas
+      </h1>
       <v-row>
         <v-col v-for="(unico, i) in unicos3" :key="i">
           <Dialog :elemento="unico" />
@@ -61,9 +67,6 @@ export default {
     },
     unicos3() {
       return this.$store.state.unicos.digital3
-    },
-    proyectoActual() {
-      return this.$store.state.artedigital.proyectoActual
     }
   }
 }

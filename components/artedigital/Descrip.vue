@@ -1,9 +1,17 @@
 <template>
-  <v-row>
-    <p v-for="(item, i) in proyectoActual.sub" :key="i">
-      {{ item }}
-    </p>
-  </v-row>
+  <div>
+    <v-card-text class="d-flex">
+      <v-card-subtitle
+        v-for="(item, i) in proyectoActual.sub"
+        :key="i"
+        class="text-justify"
+      >
+        <p>
+          {{ item }}
+        </p>
+      </v-card-subtitle>
+    </v-card-text>
+  </div>
 </template>
 
 <script>

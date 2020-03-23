@@ -9,31 +9,46 @@
           <Frase />
         </v-col>
       </v-row>
-      <h1 class="pb-5 mb-5 mt-5">Libros</h1>
+      <h1 class="pb-5 mb-5 mt-5 d-flex justify-center justify-sm-start">
+        <v-icon class="ho mx-2">mdi-star-four-points</v-icon>
+        Libros
+      </h1>
       <v-row>
         <v-col v-for="(unico, i) in unicos" :key="i">
           <Dialog :elemento="unico" />
         </v-col>
       </v-row>
-      <h1 class="mb-5 mt-5 pt-5">Covers</h1>
+      <h1 class="mb-5 mt-5 pt-5 d-flex justify-center justify-sm-start">
+        <v-icon class="ho mx-2">mdi-star-four-points</v-icon>
+        Covers
+      </h1>
       <v-row>
         <v-col v-for="(unico, i) in unicos3" :key="i">
           <Dialog :elemento="unico" />
         </v-col>
       </v-row>
-      <h1 class="mb-5 mt-5 pt-5">Productos</h1>
+      <h1 class="mb-5 mt-5 pt-5 d-flex justify-center justify-sm-start">
+        <v-icon class="ho mx-2">mdi-star-four-points</v-icon>
+        Productos
+      </h1>
       <v-row>
         <v-col v-for="(unico, i) in unicos4" :key="i">
           <Dialog :elemento="unico" />
         </v-col>
       </v-row>
-      <h1 class="mb-5 mt-5 pt-5">Menus</h1>
+      <h1 class="mb-5 mt-5 pt-5 d-flex justify-center justify-sm-start">
+        <v-icon class="ho mx-2">mdi-star-four-points</v-icon>
+        Menus
+      </h1>
       <v-row>
         <v-col v-for="(unico, i) in unicos5" :key="i">
           <Dialog :elemento="unico" />
         </v-col>
       </v-row>
-      <h1 class="mb-5 mt-5 pt-5">Flyers</h1>
+      <h1 class="mb-5 mt-5 pt-5 d-flex justify-center justify-sm-start">
+        <v-icon class="ho mx-2">mdi-star-four-points</v-icon>
+        Flyers
+      </h1>
       <v-row>
         <v-col v-for="(unico, i) in unicos2" :key="i">
           <Dialog :elemento="unico" />

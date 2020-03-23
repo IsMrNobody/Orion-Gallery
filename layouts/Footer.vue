@@ -5,7 +5,14 @@
         <strong class="subheading">Portal de Orion</strong>
         <v-spacer></v-spacer>
 
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          :src="src"
+          class="mx-4"
+          dark
+          icon
+        >
           <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
         <!-- <v-btn class="mx-4" to="/" dark icon>
@@ -29,7 +36,8 @@
 <script>
 export default {
   data: () => ({
-    icons: ['mdi-facebook', 'mdi-instagram']
+    icons: ['mdi-facebook', 'mdi-instagram'],
+    src: ['face.com', 'insta.com']
   })
 }
 </script>

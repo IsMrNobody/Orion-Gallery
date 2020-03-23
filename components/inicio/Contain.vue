@@ -1,11 +1,9 @@
 <template>
   <v-container>
-    <v-row justify="">
-      <h1 class="pl-2 ml-3 pb-4">
-        <v-icon class="ho">mdi-star-four-points</v-icon>
-        {{ titulo }}
-      </h1>
-    </v-row>
+    <h1 class="pl-2 ml-3 pb-4">
+      <v-icon class="ho">mdi-star-four-points</v-icon>
+      {{ titulo }}
+    </h1>
     <h2 class="pl-5 ml-5">{{ sub }}</h2>
     <h3 class="pl-5 ml-5 mb-4">{{ des }}</h3>
     <v-row>
@@ -97,7 +95,7 @@ export default {
 }
 h1 {
   color: #03a9f4;
-  transition: 1s;
+  transition: 0.6s;
   font-size: 2.5em;
 }
 h1:hover {

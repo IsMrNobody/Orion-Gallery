@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" max-width="600px">
+  <v-dialog v-model="dialog" max-width="560px">
     <template v-slot:activator="{ on }">
       <v-card class="mx-auto tarjeta elevation-10" max-width="250px">
         <v-img
@@ -15,18 +15,20 @@
     </template>
 
     <v-card flat class="black">
-      <v-img :src="elemento.src">
-        <v-card-title>
+      <v-row class="pa-2 mx-3 float-right">
+        <v-btn @click="dialog = false" small icon text>
+          <v-icon small>mdi-star-four-points</v-icon>
+        </v-btn>
+      </v-row>
+      <v-card-title class="text-left">
+        <h2>
           {{ elemento.titulo }}
-          <v-spacer></v-spacer>
-          <v-btn @click="dialog = false" small icon color="" text>
-            <v-icon small>mdi-star-four-points</v-icon>
-          </v-btn>
-        </v-card-title>
-      </v-img>
-      <v-card-subtitle class="text-left pt-4 tx">
+        </h2>
+      </v-card-title>
+      <v-card-subtitle class="text-left pt-2">
         {{ elemento.subtitulo }}
       </v-card-subtitle>
+      <v-img :src="elemento.src"></v-img>
     </v-card>
   </v-dialog>
 </template>

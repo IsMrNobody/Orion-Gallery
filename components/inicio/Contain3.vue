@@ -1,12 +1,9 @@
 <template>
   <v-container>
-    <v-row justify="">
-      <h1 class="pl-2 ml-3 pb-4">
-        <v-icon class="ho">mdi-star-four-points</v-icon>
-        {{ titulo }}
-        <!-- <v-icon right>mdi-star-four-points</v-icon> -->
-      </h1>
-    </v-row>
+    <h1 class="pl-2 ml-3 pb-4">
+      <v-icon class="ho">mdi-star-four-points</v-icon>
+      {{ titulo }}
+    </h1>
     <h2 class="pl-5 ml-5">{{ sub }}</h2>
     <h3 class="pl-5 ml-5 mb-4">{{ des }}</h3>
     <v-row>
@@ -26,12 +23,6 @@
           <v-card-subtitle class="text-left pb-0">{{
             galeria.subtitulo
           }}</v-card-subtitle>
-
-          <!-- <v-card-text class="text--primary text-left">
-            <div>Whitehaven Beach</div>
-
-            <div>Whitsunday Island, Whitsunday Islands</div>
-          </v-card-text> -->
 
           <v-card-actions>
             <v-btn @click="verProyecto(i)" color="orange" text>
