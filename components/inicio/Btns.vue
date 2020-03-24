@@ -7,13 +7,40 @@
     </v-row>
     <v-row justify="center">
       <v-toolbarTitle class="botones ma-5">
-        <v-btn text class="bor mx-4" to="gallery">Mintaka</v-btn>
-        <v-btn text class="bor mx-4" to="artedigital">Alnilam</v-btn>
-        <v-btn text class="bor mx-4" to="diseños">Alnitak</v-btn>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          :to="icon.to"
+          text
+          class="bor mx-4"
+        >
+          {{ icon.name }}
+        </v-btn>
       </v-toolbarTitle>
     </v-row>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    icons: [
+      {
+        name: 'Alnilam',
+        to: '/gallery'
+      },
+      {
+        name: 'Alnitak',
+        to: '/artedigital'
+      },
+      {
+        name: 'Mintaka',
+        to: '/diseños'
+      }
+    ]
+  })
+}
+</script>
 
 <style scoped>
 .bor:before {

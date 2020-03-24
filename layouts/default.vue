@@ -17,7 +17,12 @@
           exact
         >
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-tooltip :color="item.color" right>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on" class="ho">{{ item.icon }}</v-icon>
+              </template>
+              <span>{{ item.title }}</span>
+            </v-tooltip>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -27,38 +32,12 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed flat app color="transparent">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <!-- <v-btn @click.stop="miniVariant = !miniVariant" icon>
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn> -->
-      <!-- <v-btn @click.stop="clipped = !clipped" icon>
-        <v-icon>mdi-application</v-icon>
-      </v-btn> -->
-      <!-- <v-btn @click.stop="fixed = !fixed" icon>
-        <v-icon>mdi-minus</v-icon>
-      </v-btn> -->
-      <!-- <v-toolbar-title v-text="title" /> -->
-      <v-spacer />
-      <!-- <v-btn @click.stop="rightDrawer = !rightDrawer" icon>
-        <v-icon>mdi-menu</v-icon>
-      </v-btn> -->
     </v-app-bar>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <!-- <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> -->
     <v-footer :fixed="fixed" color="black" app>
       <span>&copy; 2020</span>
     </v-footer>
@@ -79,29 +58,33 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-star-four-points',
+          to: 'home',
           title: 'Inicio',
-          to: 'home'
+          color: '#191524',
+          icon: 'mdi-star-four-points'
         },
         {
-          icon: 'mdi-star-four-points',
-          title: 'Gallery',
+          to: '/gallery',
           alt: 'Galeria',
-          to: '/gallery'
+          color: '#03a9f4',
+          title: 'Alnilam',
+          icon: 'mdi-star-four-points'
         },
         {
-          icon: 'mdi-star-four-points',
-          title: 'Arte Digital',
-          to: '/artedigital'
+          color: '#ba33d2',
+          to: '/artedigital',
+          title: 'Alnitak',
+          icon: 'mdi-star-four-points'
         },
         {
-          icon: 'mdi-star-four-points',
-          title: 'Diseño',
-          to: '/diseños'
+          to: '/diseños',
+          title: 'Mintaka',
+          color: '#6e3fee',
+          icon: 'mdi-star-four-points'
         }
       ],
-      miniVariant: false,
       right: true,
+      miniVariant: false,
       rightDrawer: false,
       title: 'Orion Gallery'
     }
@@ -116,7 +99,7 @@ export default {
 .nav {
   background-image: linear-gradient(rgb(16, 3, 27), rgb(0, 0, 0));
 }
-.poss {
-  position: absolute;
+.ho:hover {
+  color: rgba(248, 36, 255, 0.568);
 }
 </style>

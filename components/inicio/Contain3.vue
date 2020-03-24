@@ -97,7 +97,7 @@ export default {
 h1 {
   transition: 1s;
   font-size: 2.5em;
-  color: #3f85ee;
+  color: #6e3fee;
 }
 h1:hover {
   letter-spacing: 10px;
