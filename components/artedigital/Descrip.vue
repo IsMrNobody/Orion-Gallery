@@ -1,23 +1,25 @@
 <template>
   <div>
-    <v-card-text class="d-flex">
-      <v-card-subtitle
-        v-for="(item, i) in proyectoActual.sub"
-        :key="i"
-        class="text-justify"
-      >
-        <p>
-          {{ item }}
-        </p>
-      </v-card-subtitle>
-    </v-card-text>
+    <v-row>
+      <h3 v-for="(item, i) in galerias.sub" :key="i">
+        {{ item }}
+      </h3>
+    </v-row>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    elemento: {
+      type: Object,
+      default: () => ({
+        sub: 'Orion Gallery'
+      })
+    }
+  },
   computed: {
-    proyectoActual() {
+    galerias() {
       return this.$store.state.artedigital.proyectoActual
     }
   }

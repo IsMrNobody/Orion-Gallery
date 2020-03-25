@@ -17,11 +17,16 @@
           exact
         >
           <v-list-item-action>
-            <v-tooltip :color="item.color" right>
+            <v-tooltip
+              :color="item.color"
+              right
+              text
+              transition="slide-x-transition"
+            >
               <template v-slot:activator="{ on }">
                 <v-icon v-on="on" class="ho">{{ item.icon }}</v-icon>
               </template>
-              <span>{{ item.title }}</span>
+              <h1>{{ item.title }}</h1>
             </v-tooltip>
           </v-list-item-action>
           <v-list-item-content>
@@ -65,13 +70,13 @@ export default {
         },
         {
           to: '/gallery',
-          alt: 'Galeria',
-          color: '#03a9f4',
           title: 'Alnilam',
+          color: '#191524',
+          alt: 'Galeria',
           icon: 'mdi-star-four-points'
         },
         {
-          color: '#ba33d2',
+          color: '#191524',
           to: '/artedigital',
           title: 'Alnitak',
           icon: 'mdi-star-four-points'
@@ -79,7 +84,7 @@ export default {
         {
           to: '/diseños',
           title: 'Mintaka',
-          color: '#6e3fee',
+          color: '#191524',
           icon: 'mdi-star-four-points'
         }
       ],
@@ -101,5 +106,11 @@ export default {
 }
 .ho:hover {
   color: rgba(248, 36, 255, 0.568);
+}
+.ble {
+  filter: opacity(0.2);
+}
+h1 {
+  border-style: solid 1px;
 }
 </style>

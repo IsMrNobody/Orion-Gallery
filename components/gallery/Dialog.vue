@@ -63,6 +63,21 @@ p {
   background-color: black;
   opacity: 0.6;
   transition: 0.8s;
+  animation: tar 1s;
+}
+@keyframes tar {
+  0% {
+    opacity: 0;
+    left: 100px;
+  }
+  50% {
+    opacity: 0.5;
+    left: 50px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
 }
 .tarjeta:hover {
   opacity: 1;

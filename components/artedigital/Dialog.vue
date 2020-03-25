@@ -60,9 +60,24 @@ p {
   background-color: black;
   opacity: 0.6;
   transition: 0.8s;
+  animation: tar 1s;
 }
 .tarjeta:hover {
   opacity: 1;
+}
+@keyframes tar {
+  0% {
+    opacity: 0;
+    left: 100px;
+  }
+  50% {
+    opacity: 0.5;
+    left: 50px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
 }
 .tx {
   font-family: fantasy;

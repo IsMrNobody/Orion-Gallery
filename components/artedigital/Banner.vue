@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row justify="center" align="center" class="re">
+    <v-row class="re">
       <iframe
         width="100%"
         height="100%"

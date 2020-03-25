@@ -21,7 +21,7 @@
           <Dialog :elemento="unico" />
         </v-col>
       </v-row>
-      <Banner class="mt-5 mb-5" />
+      <Banner class="mar" />
       <v-row>
         <v-col v-for="(unico, i) in unicos2" :key="i">
           <Dialog :elemento="unico" />
@@ -84,5 +84,9 @@ export default {
   100% {
     opacity: 1;
   }
+}
+.mar {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 </style>

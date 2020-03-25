@@ -49,9 +49,10 @@ export default {
   position: absolute;
   background: blueviolet;
   width: 100%;
+  filter: blur(0.6);
 }
 .bor:hover {
-  border: 0.6px solid #a921b6;
+  border: 0.6px solid #2183df;
 }
 .botones {
   font-family: 'aladin, cusive';

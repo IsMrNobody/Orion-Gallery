@@ -76,6 +76,7 @@ export const state = () => ({
     },
     {
       titulo: 'Coffee-Bar',
+      sub: 'kiosko',
       group: [
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2FarteDigital%2F01%2Fslider.png?alt=media&token=976bc89f-5538-4470-83e0-eff34b5ddff9'
       ],
