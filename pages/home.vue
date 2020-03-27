@@ -10,7 +10,7 @@
       <Contain3 class="tarjetas" />
     </div>
     <v-col>
-      <Cartas />
+      <!-- <Cartas /> -->
       <End />
     </v-col>
   </v-row>
@@ -23,7 +23,7 @@ import Parrafo1 from '@/components/inicio/Parrafo1.vue'
 import Contain from '@/components/inicio/Contain.vue'
 import Contain2 from '@/components/inicio/Contain2.vue'
 import Contain3 from '@/components/inicio/Contain3.vue'
-import Cartas from '@/components/inicio/Cartas.vue'
+// import Cartas from '@/components/inicio/Cartas.vue'
 export default {
   components: {
     Intro,
@@ -31,8 +31,8 @@ export default {
     Parrafo1,
     Contain,
     Contain2,
-    Contain3,
-    Cartas
+    Contain3
+    // Cartas
   }
 }
 </script>

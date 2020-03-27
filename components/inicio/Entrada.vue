@@ -54,17 +54,14 @@ export default {
 }
 .log {
   margin-top: 40vh;
-  /* animation: log 3s; */
   position: absolute;
 }
-@keyframes log {
+@keyframes tras {
   0% {
     opacity: 0;
-    margin-top: 50vh;
   }
   100% {
     opacity: 1;
-    margin-top: 40vh;
   }
 }
 </style>

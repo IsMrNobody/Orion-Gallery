@@ -6,20 +6,18 @@
       </v-toolbarIcon>
     </v-row>
     <v-row justify="center">
-      <v-toolbarTitle v-for="icon in icons" :key="icon" class="botones">
+      <v-toolbarTitle
+        v-for="icon in icons"
+        :key="icon"
+        class="botones mx-2 mt-5"
+      >
         <v-tooltip color="transparent" bottom transition="slide-y-transition">
           <template v-slot:activator="{ on }">
-            <v-btn
-              :to="icon.to"
-              :color="icon.color"
-              v-on="on"
-              text
-              class="bor mx-2"
-            >
+            <v-btn :to="icon.to" :color="icon.color" v-on="on" text class="bor">
               {{ icon.name }}
             </v-btn>
           </template>
-          <spam>{{ icon.bot }}</spam>
+          <h4 class="op">{{ icon.bot }}</h4>
         </v-tooltip>
       </v-toolbarTitle>
     </v-row>
@@ -62,16 +60,19 @@ export default {
   width: 100%;
 }
 .bor {
-  opacity: 1;
+  opacity: 0.8;
   transition: 0.6s;
 }
 .bor:hover {
-  opacity: 0.4;
+  opacity: 1;
 }
 .botones {
   font-family: 'aladin, cusive';
   z-index: 1;
   animation: bot 6s;
+}
+.op {
+  opacity: 0.8;
 }
 
 @keyframes bot {

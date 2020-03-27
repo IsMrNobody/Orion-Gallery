@@ -8,7 +8,7 @@
     <h3 class="pl-5 ml-5 mb-4">{{ des }}</h3>
     <v-row>
       <v-col v-for="(galeria, i) in galerias" :key="i">
-        <v-card class="mx-auto tarjeta elevation-10" max-width="350px">
+        <v-card class="mx-auto tarjeta elevation-10" max-width="">
           <v-img
             :src="galeria.src"
             :alt="galeria.titulo"

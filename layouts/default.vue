@@ -70,7 +70,7 @@ export default {
         },
         {
           to: '/gallery',
-          title: 'Galeria de arte',
+          title: 'Galeria de Arte',
           color: '#191524',
           alt: 'Galeria',
           icon: 'mdi-star-four-points'
@@ -99,6 +99,7 @@ export default {
 
 <style scoped>
 .bg {
+  /* background-image: 'bg.png'; */
   background-image: linear-gradient(rgb(0, 0, 0), rgb(27, 2, 22));
 }
 .nav {

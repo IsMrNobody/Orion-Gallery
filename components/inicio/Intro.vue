@@ -4,12 +4,7 @@
       <v-row justify="center">
         <Btns class="position" />
       </v-row>
-      <v-img
-        class="tra"
-        width="100vw"
-        height="100vh"
-        src="https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/bginicio2.png?alt=media&token=654fafa2-8d27-47ec-af04-d2499668c088"
-      >
+      <v-img class="tra" width="100vw" height="100vh" src="bg.png">
         <video
           class="mode"
           height="auto"
