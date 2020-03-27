@@ -4,7 +4,7 @@
       <iframe
         width="100%"
         height="100%"
-        src="https://www.youtube.com/embed/Z6_ZNW1DACE"
+        src="https://www.youtube.com/embed/JjPSnc2QGiQ?rel=0"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
@@ -27,6 +27,6 @@ export default {
 .re {
   /* width: 100vw; */
   background-color: black;
-  height: 400px;
+  height: 500px;
 }
 </style>

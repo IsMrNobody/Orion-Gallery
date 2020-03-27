@@ -1,24 +1,29 @@
 <template>
-  <div>
+  <v-container>
     <v-row justify="center">
       <v-toolbarIcon class="logo">
-        <img src="logorion.png" alt="logo" class="ma-5 log" />
+        <img src="logorion.png" alt="logo" class="log" />
       </v-toolbarIcon>
     </v-row>
     <v-row justify="center">
-      <v-toolbarTitle class="botones ma-5">
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          :to="icon.to"
-          text
-          class="bor mx-4"
-        >
-          {{ icon.name }}
-        </v-btn>
+      <v-toolbarTitle v-for="icon in icons" :key="icon" class="botones">
+        <v-tooltip color="transparent" bottom transition="slide-y-transition">
+          <template v-slot:activator="{ on }">
+            <v-btn
+              :to="icon.to"
+              :color="icon.color"
+              v-on="on"
+              text
+              class="bor mx-2"
+            >
+              {{ icon.name }}
+            </v-btn>
+          </template>
+          <spam>{{ icon.bot }}</spam>
+        </v-tooltip>
       </v-toolbarTitle>
     </v-row>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -27,15 +32,21 @@ export default {
     icons: [
       {
         name: 'Alnilam',
-        to: '/gallery'
+        to: '/gallery',
+        color: '#03a9f4',
+        bot: 'Arte'
       },
       {
         name: 'Alnitak',
-        to: '/artedigital'
+        to: '/artedigital',
+        color: '#ba33d2',
+        bot: 'Digital'
       },
       {
         name: 'Mintaka',
-        to: '/diseños'
+        to: '/diseños',
+        color: '#6e3fee',
+        bot: 'Diseño'
       }
     ]
   })
@@ -49,10 +60,13 @@ export default {
   position: absolute;
   background: blueviolet;
   width: 100%;
-  filter: blur(0.6);
+}
+.bor {
+  opacity: 1;
+  transition: 0.6s;
 }
 .bor:hover {
-  border: 0.6px solid #2183df;
+  opacity: 0.4;
 }
 .botones {
   font-family: 'aladin, cusive';

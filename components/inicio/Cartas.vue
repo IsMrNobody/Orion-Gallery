@@ -4,26 +4,19 @@
       <h1>El cinturon de Orión</h1>
     </v-row>
     <v-row>
-      <div>
-        <v-row justify="center" class="">
-          <v-card
-            v-for="(cartel, i) in carteles"
-            :key="i"
-            class="ma-2"
-            width="375px"
-          >
-            <v-img :src="cartel.src" class="memory">
-              <Paral2 />
-            </v-img>
-          </v-card>
-        </v-row>
-      </div>
-      <p class="text-center alegreya pad">
-        En nuestra constelación existen infinitas formas de mostrar una
-        realidad, en Orión Gallery podrás dar un vistazo de lo mucho que tenemos
-        que decir con tan pocas palabras.
-      </p>
+      <v-row justify="center">
+        <v-card v-for="(cartel, i) in carteles" :key="i" class="ma-2 tam">
+          <v-img :src="cartel.src" class="memory">
+            <Paral2 />
+          </v-img>
+        </v-card>
+      </v-row>
     </v-row>
+    <p class="text-center alegreya pad">
+      En nuestra constelación existen infinitas formas de mostrar una realidad,
+      en Orión Gallery podrás dar un vistazo de lo mucho que tenemos que decir
+      con tan pocas palabras.
+    </p>
   </v-container>
 </template>
 
@@ -65,5 +58,8 @@ export default {
 .pad {
   margin: 4% 4%;
   font-size: 30px;
+}
+.tam {
+  width: 320px;
 }
 </style>

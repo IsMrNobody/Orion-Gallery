@@ -1,9 +1,8 @@
 <template>
-  <v-row justify="center">
-    <div class="">
+  <v-row>
+    <div>
       <video
-        class=""
-        height="768px"
+        height="auto"
         width="100%"
         autoplay
         loop="1"
@@ -12,18 +11,3 @@
     </div>
   </v-row>
 </template>
-
-<style scoped>
-.tra {
-  animation: tras 8s;
-}
-
-@keyframes tras {
-  0% {
-    opacity: 0.2;
-  }
-  80% {
-    opacity: 1;
-  }
-}
-</style>

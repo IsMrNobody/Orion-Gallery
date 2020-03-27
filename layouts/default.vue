@@ -26,7 +26,7 @@
               <template v-slot:activator="{ on }">
                 <v-icon v-on="on" class="ho">{{ item.icon }}</v-icon>
               </template>
-              <h1>{{ item.title }}</h1>
+              <h3>{{ item.title }}</h3>
             </v-tooltip>
           </v-list-item-action>
           <v-list-item-content>
@@ -70,7 +70,7 @@ export default {
         },
         {
           to: '/gallery',
-          title: 'Alnilam',
+          title: 'Galeria de arte',
           color: '#191524',
           alt: 'Galeria',
           icon: 'mdi-star-four-points'
@@ -78,12 +78,12 @@ export default {
         {
           color: '#191524',
           to: '/artedigital',
-          title: 'Alnitak',
+          title: 'Digital',
           icon: 'mdi-star-four-points'
         },
         {
           to: '/diseños',
-          title: 'Mintaka',
+          title: 'Diseños',
           color: '#191524',
           icon: 'mdi-star-four-points'
         }
