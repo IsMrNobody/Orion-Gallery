@@ -34,6 +34,12 @@ export default {
    ** Global CSS
    */
   css: ['~/assets/css/main.css'],
+  manifest: {
+    name: 'Orion Gallery',
+    short_name: 'Orion',
+    background_color: '#2a0824',
+    theme_color: '#2a0824',
+  },
   /*
    ** Plugins to load before mounting the App
    */
