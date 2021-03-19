@@ -35,7 +35,7 @@ export default {
     titulo: 'Alnilam',
     sub: 'Piezas de Arte',
     des:
-      'Pinceladas con conciencia, de la manera más tradicional traemos tu visión a este plano'
+      'De la manera tradicional traemos tu visión a este plano fisico'
   }),
   computed: {
     galerias() {

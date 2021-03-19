@@ -36,7 +36,7 @@ export default {
     titulo: 'Mintaka',
     sub: 'Diseño Gráfico',
     des:
-      'Contribuimos con la creación de identidades coorporativas de marcas con visión del nuevo mundo'
+      'Marcas con visión del nuevo mundo'
   }),
   computed: {
     galerias() {

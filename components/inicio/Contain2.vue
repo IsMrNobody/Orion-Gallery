@@ -36,7 +36,7 @@ export default {
     titulo: 'Alnitak',
     sub: 'Arte Digital',
     des:
-      'Una muestra de todo lo que se puede alcanzar si se fuciona tecnologia y mente humana'
+      'Una muestra de tecnologia y mente creativa'
   }),
   computed: {
     galerias() {
