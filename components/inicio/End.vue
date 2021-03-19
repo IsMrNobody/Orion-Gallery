@@ -1,6 +1,6 @@
 <template>
-  <v-row>
-    <div>
+  <v-col>
+    <v-row>
       <video
         height="auto"
         width="100%"
@@ -8,6 +8,6 @@
         loop="1"
         src="https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fproyectos%2Fvideos%2Fend_3.mp4?alt=media&token=c09b4945-574c-48a4-9bc2-99b8d8f89eab"
       ></video>
-    </div>
-  </v-row>
+    </v-row>
+  </v-col>
 </template>

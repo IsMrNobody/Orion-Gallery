@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-col pa-5 pl-5 ma-5>
+    <!-- <v-col pa-5 pl-5 ma-5> -->
       <!-- <div class="text-center hidden-sm-and-up">
         <h2>Desde las constelaciones</h2>
         <p>
@@ -11,12 +11,12 @@
           ver y admirar lo mismo que vieron ellos, nuestros ancestros.
         </p>
       </div> -->
-    </v-col>
-    <div>
+    <!-- </v-col> -->
+    <div class="opa">
       <Lottie :options="defaultOptions" />
     </div>
     <Paral />
-    <div>
+    <div class="opa">
       <Lottie :options="defaultOptions" />
     </div>
   </div>
@@ -43,5 +43,8 @@ export default {
   margin: 4% 4%;
   padding: 4%;
   font-size: 30px;
+}
+.opa {
+  opacity: 0.2;
 }
 </style>

@@ -5,30 +5,24 @@
       {{ titulo }}
     </h1>
     <h2 class="pl-5 ml-5">{{ sub }}</h2>
-    <h3 class="pl-5 ml-5 mb-4">{{ des }}</h3>
+    <p class="pl-5 ml-5 mb-4">{{ des }}</p>
     <v-row>
       <v-col v-for="(galeria, i) in galerias" :key="i">
-        <v-card class="mx-auto tarjeta elevation-10" max-width="350px">
+        <v-card class="mx-auto black elevation-10" @click="verProyecto(i)" max-width="250px">
           <v-img
             :src="galeria.src"
             :alt="galeria.titulo"
-            class="white--text align-end"
-            height="300px"
+            class="white--text tarjeta align-end"
+            height="150px"
             width="100%"
           >
           </v-img>
 
           <v-card-title>{{ galeria.titulo }}</v-card-title>
 
-          <v-card-subtitle class="text-left pb-0">{{
+          <v-card-subtitle class="text-left">{{
             galeria.subtitulo
           }}</v-card-subtitle>
-
-          <v-card-actions>
-            <v-btn @click="verProyecto(i)" color="orange" text>
-              Ver
-            </v-btn>
-          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
@@ -86,12 +80,12 @@ export default {
   text-align: center;
 }
 .tarjeta {
-  opacity: 0.6;
+  /* opacity: 0.6; */
   transition: 0.8s;
   background-color: black;
 }
 .tarjeta:hover {
-  opacity: 1;
+  /* opacity: 1; */
   margin-top: -5%;
 }
 h1 {
@@ -105,7 +99,7 @@ h1:hover {
 h2 {
   font-size: 3em;
 }
-h3 {
+p {
   font-size: 2em;
 }
 </style>

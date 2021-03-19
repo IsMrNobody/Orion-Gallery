@@ -44,7 +44,7 @@
       </v-container>
     </v-content>
     <v-footer :fixed="fixed" color="black" app>
-      <span>&copy; 2020</span>
+      <span>&copy; 2021 </span>
     </v-footer>
     <Footer />
   </v-app>

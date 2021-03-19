@@ -9,10 +9,10 @@
       <Contain2 class="tarjetas" />
       <Contain3 class="tarjetas" />
     </div>
-    <v-col>
-      <!-- <Cartas /> -->
-      <End />
-    </v-col>
+    <!-- <Cartas /> -->
+    <div>
+      <End class="mb" />
+    </div>
   </v-row>
 </template>
 
@@ -45,5 +45,8 @@ export default {
 .tarjetas {
   /* margin-top: 200px; */
   margin-bottom: 100px;
+}
+.mb {
+  margin-bottom: -80px;
 }
 </style>
