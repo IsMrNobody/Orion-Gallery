@@ -3,8 +3,8 @@
     <div>
       <v-col>
         <Intro />
-        <Parrafo1 />
       </v-col>
+      <Parrafo1 />
       <Contain class="tarjetas" />
       <Contain2 class="tarjetas" />
       <Contain3 class="tarjetas" />
@@ -43,7 +43,7 @@ export default {
   padding: 8%;
 }
 .tarjetas {
-  margin-top: 200px;
+  /* margin-top: 200px; */
   margin-bottom: 100px;
 }
 </style>

@@ -4,7 +4,7 @@
       <v-row justify="center">
         <Btns class="position" />
       </v-row>
-      <v-img class="tra" width="100vw" height="100vh" src="bg.png">
+      <v-img class="tra" width="100vw" height="70vh" src="bg.png">
         <video
           class="mode"
           height="auto"

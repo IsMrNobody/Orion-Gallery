@@ -1,9 +1,11 @@
 <template>
-  <div justify="center">
+  <div>
     <v-img class="img" src="bg.png">
-      <v-row align="center" justify="center">
-        <Logo class="log" />
-        <v-btn to="home" class="bot">Entrar</v-btn>
+      <v-row justify="center">
+        <v-col class="tam text-center">
+          <Logo />
+          <v-btn to="home" outlined color="blue" class="bot">Entrar</v-btn>
+        </v-col>
       </v-row>
       <video
         class="mode"
@@ -26,14 +28,19 @@ export default {
 </script>
 
 <style scoped>
+.tam {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+}
 .mode {
   z-index: 1;
   mix-blend-mode: screen;
 }
 .bot {
   z-index: 1;
-  margin-top: 60vh;
-  position: absolute;
+  margin-top: -300px;
+  /* position: absolute; */
   animation: bot 10s;
 }
 @keyframes bot {
@@ -48,13 +55,8 @@ export default {
   }
 }
 .img {
-  width: 100vw;
   height: 100vh;
   animation: tras 8s;
-}
-.log {
-  margin-top: 40vh;
-  position: absolute;
 }
 @keyframes tras {
   0% {

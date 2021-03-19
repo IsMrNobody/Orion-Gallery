@@ -1,7 +1,7 @@
 <template>
   <v-parallax
     height="300"
-    src="https://cdn.mos.cms.futurecdn.net/reaVPYbHtVWG8WHFPrgdvB.jpg"
+    src="/bg.png"
   >
     <div class="text-center">
       <v-icon class="pb-5">mdi-star-four-points</v-icon>
