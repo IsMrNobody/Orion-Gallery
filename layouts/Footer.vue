@@ -6,8 +6,8 @@
         <v-spacer></v-spacer>
 
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
+          v-for="(icon, i) in icons"
+          :key="i"
           :href="icon.to"
           class="mx-4"
           dark

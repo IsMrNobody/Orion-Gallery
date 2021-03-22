@@ -1,9 +1,9 @@
 <template>
   <v-container>
-    <h1 class="pl-2 ml-3 pb-4">
+    <!-- <h1 class="pl-2 ml-3 pb-4">
       <v-icon class="ho">mdi-star-four-points</v-icon>
       {{ titulo }}
-    </h1>
+    </h1> -->
     <h3 class="pl-5 ml-5 grey--text">{{ sub }}</h3>
     <h5 class="pl-5 ml-5 mb-4 display-1">{{ des }}</h5>
     <v-row>
@@ -34,9 +34,9 @@ export default {
   data: () => ({
     dialog: false,
     titulo: 'Alnitak',
-    sub: 'Arte Digital',
+    sub: 'Digital Artworks',
     des:
-      'Una muestra de tecnologia y mente creativa'
+      'Una muestra de tecnología y mente creativa'
   }),
   computed: {
     galerias() {

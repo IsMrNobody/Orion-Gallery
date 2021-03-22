@@ -5,9 +5,9 @@
         <Intro />
       </v-col>
       <Parrafo1 />
-      <Contain class="tarjetas" />
-      <Contain2 class="tarjetas" />
       <Contain3 class="tarjetas" />
+      <Contain2 class="tarjetas" />
+      <Contain class="tarjetas" />
     </div>
     <!-- <Cartas /> -->
     <div>

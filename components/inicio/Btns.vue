@@ -1,14 +1,14 @@
 <template>
   <v-container>
     <v-row justify="center">
-      <v-toolbarIcon class="logo">
-        <img src="logorion.png" alt="logo" class="log" />
-      </v-toolbarIcon>
+      <div class="logo">
+        <img src="/logorion.png" alt="logo" class="log" />
+      </div>
     </v-row>
     <v-row justify="center">
       <v-toolbarTitle
-        v-for="icon in icons"
-        :key="icon"
+        v-for="(icon, i) in icons"
+        :key="i"
         class="botones mx-2 mt-5"
       >
         <v-tooltip color="transparent" bottom transition="slide-y-transition">

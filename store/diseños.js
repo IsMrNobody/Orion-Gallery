@@ -23,7 +23,7 @@ export const state = () => ({
     },
     {
       titulo: 'Jartate App',
-      subtitulo: 'Aplicacíon web - servivio de comida online',
+      subtitulo: 'Aplicacíon web - Delivery Food',
       src:
         'https://firebasestorage.googleapis.com/v0/b/orion-gallery-116f8.appspot.com/o/Galeria%2Fdise%C3%B1os%2F04%2Fcard.png?alt=media&token=e4e2b0a8-6399-4b0a-9f23-6b6261281664'
     }

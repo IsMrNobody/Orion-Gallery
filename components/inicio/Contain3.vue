@@ -1,14 +1,14 @@
 <template>
   <v-container>
-    <h1 class="pl-2 ml-3 pb-4">
+    <!-- <h1 class="pl-2 ml-3 pb-4">
       <v-icon class="ho">mdi-star-four-points</v-icon>
       {{ titulo }}
-    </h1>
+    </h1> -->
     <h3 class="pl-5 ml-5 grey--text">{{ sub }}</h3>
     <h5 class="pl-5 ml-5 mb-4 display-1">{{ des }}</h5>
     <v-row>
       <v-col v-for="(galeria, i) in galerias" :key="i">
-        <v-card class="mx-auto black elevation-10" max-width="250px">
+        <v-card class="mx-auto black elevation-10" max-width="250px" @click="verProyecto(i)">
           <v-img
             :src="galeria.src"
             :alt="galeria.titulo"
@@ -46,7 +46,7 @@ export default {
   methods: {
     verProyecto(i) {
       this.$store.dispatch('diseños/proyectoActual', i)
-      this.$router.push('/diseños')
+      this.$router.push('/Design')
     }
   }
 }
