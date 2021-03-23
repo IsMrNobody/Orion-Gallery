@@ -4,7 +4,9 @@
       <v-icon class="ho">mdi-star-four-points</v-icon>
       {{ titulo }}
     </h1> -->
-    <h3 class="pl-5 ml-5 grey--text">{{ sub }}</h3>
+    <nuxt-link to="/Design" class="tx">
+      <h3 class="pl-5 ml-5 grey--text">{{ sub }}</h3>
+    </nuxt-link>
     <h5 class="pl-5 ml-5 mb-4 display-1">{{ des }}</h5>
     <v-row>
       <v-col v-for="(galeria, i) in galerias" :key="i">
@@ -18,7 +20,9 @@
           >
           </v-img>
 
+          
           <v-card-title>{{ galeria.titulo }}</v-card-title>
+          
 
           <v-card-subtitle class="text-left">{{
             galeria.subtitulo
@@ -81,7 +85,7 @@ export default {
 }
 .tarjeta {
   /* opacity: 0.6; */
-  transition: 0.8s;
+  transition: 0.4s;
   background-color: black;
 }
 .tarjeta:hover {
@@ -98,5 +102,8 @@ h1:hover {
 }
 h2 {
   font-size: 3em;
+}
+.tx {
+  text-decoration: none;
 }
 </style>

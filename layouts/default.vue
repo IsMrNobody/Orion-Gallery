@@ -82,7 +82,7 @@ export default {
           icon: 'mdi-star-four-points'
         },
         {
-          to: '/diseños',
+          to: '/Design',
           title: 'Diseños',
           color: '#191524',
           icon: 'mdi-star-four-points'
